@@ -22,6 +22,7 @@ sudo docker version     //deve aparecer informações sobre o client e o server
     - execute: docker-compose version
 OBS: dá para instalar o docker-machine pelo github, igual foi feita a instalação do docker-compose
 + faça logout do sistema para pegar a configuração do grupo docker.
++ execute o comando: "groups". Tem que aparece o grupo docker, ex: accurate wheel docker
 
 olhe o slide 20 da apresentação "S01 Docker Setup Slides.pdf", tem dica pós instalação
 
