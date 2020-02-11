@@ -9,7 +9,7 @@ Don't use pre-installed setupd (Digital Ocean, Linode, etc.)
 e copie a linha que tem o curl para baixar o script, ex: curl -fsSL get.docker.com -o get-docker.sh
 execute essa linha copiada no terminal.
 + execute "sh get-docker.sh" linha logo abaixo a do curl.
-+ Coloque o usuário no grupo docker, vai aparecer o comando no fim da instalação.
++ Coloque o usuário no grupo docker, vai aparecer o comando no fim da instalação. Ex: sudo usermod -aG docker helder
 + execute:
 systemctl start docker  //fedora
 systemctl status docker //fedora
