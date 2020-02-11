@@ -1,0 +1,62 @@
+docker container run --help
+
+
+docker container run -it --name proxy nginx bash
+o comando acime inicia um container do nginx com nome proxy e abre um terminal nele.
+após executar esse comando, você estará em um terminal no container.
+ls -la
+exit  //quando sai do terminal o conteiner é parado
+
+----- -i (interactive) -----
+keep session open to receive terminal input
+
+
+----- -t (pseudo-tty) -----
+simulates a real terminal, like what ssh does
+
+
+----- bash shell -----
+if run with -it, it will give you a terminal inside the running container
+
+
+
+----- Ubuntu image ----- (acho que é ubuntu server)
+its default cmd is bash, so we don't have to specify it
+docker container run -it --name ubuntu ubuntu
+apt-get update
+apt-get install -y curl
+curl google.com
+exit // sai do terminal do docker ubuntu
+docker container start -ai ubuntu   // se o container já existir
+
+----- exec -----
+docker container exec
+Run additional process in running container
+
+docker container exec --help
+
+docker container start mysql  // só se o container estiver parado.
+docker container exec -it mysql bash
+ps aux
+
+
+---- Alpine Linux -----
+A small security-focused distribution (5MB)
+docker pull alpine
+docker image ls
+docker container run -it alpine bash  //vai dar erro porque o alpine nao tem o bash.
+docker container run -it alpine sh
+apk
+
+
+
+
+
+
+
+
+
+
+
+
+

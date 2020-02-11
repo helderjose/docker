@@ -1,0 +1,50 @@
+linux:
+different per distro, don't use default package.
+Don't use pre-installed setupd (Digital Ocean, Linode, etc.)
+
+----------------------------------------
+---------- passos instalação que fiz ----------
+----------------------------------------
++ Acesse: https://get.docker.com/
+e copie a linha que tem o curl para baixar o script, ex: curl -fsSL get.docker.com -o get-docker.sh
+execute essa linha copiada no terminal.
++ execute "sh get-docker.sh" linha logo abaixo a do curl.
++ Coloque o usuário no grupo docker, vai aparecer o comando no fim da instalação.
++ execute:
+systemctl start docker  //fedora
+systemctl status docker //fedora
+sudo docker version     //deve aparecer informações sobre o client e o server
++ docker machine: https://docs.docker.com/machine/install-machine/
+    - Execute os comandos base=..., curl... e sudo... para linux.
+    - execute: docker-machine version
++ docker compose: https://github.com/docker/compose
+    - aba releases: execute (como sudo -i) o comando do curl. Execute sudo e chmod...
+    - execute: docker-compose version
+OBS: dá para instalar o docker-machine pelo github, igual foi feita a instalação do docker-compose
++ faça logout do sistema para pegar a configuração do grupo docker.
+
+olhe o slide 20 da apresentação "S01 Docker Setup Slides.pdf", tem dica pós instalação
+
+
+------------------------------
+---------- passos ----------
+------------------------------
+- Install Docker;
+- Add your user to docker group;
+
+
+
+----------------------------------------
+---------- Tipos de Instalação ----------
+----------------------------------------
+
+- https://docs.docker.com/compose/install/
+- https://docs.docker.com/machine/install-machine/
+
+
+--- instalação por script -----
+exemplo: curl -sSL https://get.docker.com/ | sh
+
+--- instalação pela store.docker ---
+Has instructions for each distro.
+https://store.docker.com/

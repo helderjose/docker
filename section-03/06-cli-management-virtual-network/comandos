@@ -1,0 +1,62 @@
+Obs para esse exemplo:
+Anywhere I do a
+docker container run <stuff> nginx , where nginx  is the image you should use,
+replace that with nginx:alpine , which still has ping command in it.
+
+
+--network bridge
+Default Docker virtual network, which is NAT'ed behind the Host IP.
+
+--network Host
+It gains performance by skipping virtual networks but sacrifies
+security of container model.
+
+--network none
+Removes eth0 and only leaves you with localhost interface in container.
+
+docker network create
+Spawns a new virtual network for you to attach containers to.
+
+network driver
+Built-in or 3rd party extensions that give you virtual network featues.
+
+docker network connect
+Dynamically creates a NIC in a container on an existing virtual network.
+
+docker network disconnect
+Dynamically removes a NIC from a container on a specific virtual network.
+
+Usar o docker do Nginx para esse exemplo.
+---- comandos ----
+docker network ls
+docker network inspect bridge
+
+docker network create my_app_net
+docker network ls
+docker network create --help
+docker container run -d --name new_nginx --network my_app_net nginx:alpine
+docker network inspect my_app_net   //o new_nginx vai estar aqui
+
+docker network --help
+docker container ls
+docker network ls
+docker network connect <id do my_app_net> <id do container do webhost (nginx)>
+ex: docker network connect 5b4632787fa0 66e065615d41  // os ids foram conseguido nos comandos ls
+
+docker container ls
+docker container inspect <id do container webhost>
+Oberse que neste momente tem duas networks no json. (acho que é como se colocasse uma nova placa de rede em um pc)
+
+docker network disconnect <id do my_app_net> <id do container do webhost (nginx)>
+docker network disconnect 5b4632787fa0 66e065615d41
+docker container inspect <id do container webhost>
+Neste ponto teremos só uma network no container (a bridge).
+
+
+----- resumo dos comandos acima -----
+* Show networks: docker network ls
+* Inspect a network: docker network inspect
+* Create a network: docker network create --driver ( o default é bridge)
+* Attach a network to container: docker network connect
+* Detach a network from container: docker network disconnect
+

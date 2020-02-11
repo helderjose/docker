@@ -1,0 +1,31 @@
+Obs para esse exemplo:
+Anywhere I do a
+docker container run <stuff> nginx , where nginx  is the image you should use,
+replace that with nginx:alpine , which still has ping command in it.
+
+========== teoria ==========
+Forget IP'S
+Static IP's and using IP's for talking to containers
+is an anti-patern. Do your best to avoid it.
+
+Docker DNS
+Docker daemon has a built-in DNS server that containers use by default.
+
+DNS Default Names
+Docker defaults the hostname to the container's name, but you
+can also set aliases
+========== <fim> teoria ==========
+
+docker container ls -a
+docker container start new_nginx
+docker container start webhost
+docker container ls
+
+docker network inspect <id da network my_app_net>
+nesse ponto vemos o container que está usando my_app_net
+
+//aliases
+docker container run -d --name my_nginx --network my_app_net nginx:alpine
+docker container exec -it my_nginx ping new_nginx
+docker container exec -it new_nginx ping my_nginx
+docker network ls

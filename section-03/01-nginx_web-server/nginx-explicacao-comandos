@@ -1,0 +1,81 @@
+No terminal execute:
+
+Comando:
+docker run --publish 80:80 nginx
+acesse: localhost:80 ou localhost
+
+Explicação:
+docker run --publish 80:80 nginx
++ Downloaded image 'nginx' from Docker Hub
++ Starte a new container from that image
++ Opened port 80 on the host IP
++ Routes that traffic to the container IP, port 80
+    Note you'll get a 'bind' error if the left number [host port] is being used by anything else, even another container.
+    You can use any port you want on the left, like 8080:80 or 8888:80, then use localhost:8888 when testing.
+
+
+docker run (comando antigo)
+starts a new container from an image.
+--------------------------------------------------------------------
+
+Comando:
+docker run --publish 80:80 --detach nginx
+
+Now detach tell Docker to run it in the background.
+--------------------------------------------------------------
+
+Comando:
+docker container ls
+
+docker ps (old way), list running containers.
+--------------------------------------------------
+
+Comando:
+docker container stop <docker-id apenas os 3 primeiros números>
+
+stops the container process but doesn't remove it.
+docker stop (old way).
+-------------------------------------------------------
+
+
+Comando:
+docker container ls -a
+Vai exibis os container criados nos comandos anteriores.
+------------------------------------------------------------
+
+Comando:
+docker container run --publish 80:80 --detach --name webhost nginx
+docker container ls -a
+-------------------------------------------------
+
+
+Comando:
+docker container logs webhost
+
+docker log (old way)
+Show log for a specific container.
+user --help to see all the log options.
+---------------------------------------------------
+
+Comando:
+docker container top webhost
+
+Exibe os processo que estão sendo executados dentro do container.
+--------------------------------------------------------
+
+Comando:
+docker container ls
+docker container rm -f <conatiner-id>
+
+-f remove um container mesmo se estiver em execução.
+-----------------------------------------------------------
+
+Comando:
+docker container rm <container-id, pode colocar vários juntos separados por espaço>
+docker rm (old way)
+
+remove (delete) one or more conainers
+-----------------------------------------------------
+
+
+

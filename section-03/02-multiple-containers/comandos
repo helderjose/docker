@@ -1,0 +1,24 @@
+----- mysql -----
+docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+docker container logs db
+Procure pela linha "GENERATED ROOT PASSWORD", caso não apareça, espere um pouco e execute o comando de novo.
+
+----- httpd (apache) -----
+docker container run -d --name webserver -p 8080:80 httpd
+docker container ls
+
+----- nginx -----
+docker container run -d --name proxy -p 80:80 nginx
+docker container ls
+
+----- testes -----
+curl localhost          //nginx
+curl localhost:8080     //apache
+
+
+docker container stop proxy webserver db
+docker container ls
+docker container ls -a
+docker container rm
+docker container ls -a
+docker image ls

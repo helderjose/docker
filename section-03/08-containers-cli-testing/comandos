@@ -1,0 +1,19 @@
+docker container run --rm -it centos:7 bash
+yum update curl
+
+//abra outro terminal e execute
+docker ps -a
+docker container run --rm -it ubuntu:14.04 bash
+apt-get update && apt-get install -y curl
+
+
+//terminal do centos
+curl --version
+exit
+
+//terminal do ubuntu
+curl --version
+exit
+
+
+docker ps -a  //verá que não tem o container do centos nem do ubuntu porque usou o --rm

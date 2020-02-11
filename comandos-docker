@@ -1,0 +1,25 @@
+systemctl start docker
+systemctl status docker
+systemctl stop docker.service
+
+docker      	//imprime as opções
+docker version  //imprime a versão do client e do server.
+docker info     // shows most configuration values for the engine.
+
+---- images ----
+docker image    //imprime as opções
+docker image ls --help
+docker images  	//exibe as imagens
+docker ps	//exibe as imagens que estão rodando. (old way).
+docker stop dockerName	//para uma imagem
+
+
+---- run vs. start -----
+'docker container run' always starts a new container.
+'docker container start' start an existing stopped one.
+
+
+==============================
+========== network ==========
+==============================
+docker network ls

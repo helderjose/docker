@@ -1,0 +1,3 @@
+Ver quantidade de containers, imagens, quantidade de docker em execução
+quantos estão parados e etc.
+comando: docker info
