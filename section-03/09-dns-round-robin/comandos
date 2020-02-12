@@ -1,0 +1,24 @@
+DNS Round Robin Test
+
+// cria uma network
+docker network create dude
+
+// cria dois container, nesse caso não importa o nome que será criado.
+// --net dude // dude é o nome da network que foi criada no começo.
+// --net-alias ou --network-alias os dois funcionam.
+docker container run -d --net dude --net-alias search elasticsearch:2
+docker container run -d --net dude --net-alias search elasticsearch:2
+
+// vai exibir os dois containeres criados
+// repare a coluna "IMAGE" vai estar "elasticsearch:2"
+docker container ls
+
+
+docker container run --rm --net dude alpine nslookup search
+
+// execute várias vezes, repare o atributo
+// cluster_uuid e name, vai mudar o valor
+docker container run --rm --net dude centos curl -s search:9200
+
+docker container ls
+docker container rm -f <nome dos dois container usados no exemplo>
