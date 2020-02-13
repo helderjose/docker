@@ -1,0 +1,12 @@
+docker container --help
+
+
+
+
+ls
+List containers running
+docker container ls --help
+docker container ls
+
+docker container ls -a
+Show all containers (default shows just running)

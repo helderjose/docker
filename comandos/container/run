@@ -1,0 +1,25 @@
+docker run --help
+Run a command in a new container
+
+
+-p
+--publish list
+Publish a container's port(s) to the host
+
+docker container run --publish 80:80 nginx
+docker container run -p 80:80 nginx
+http://localhost/ ou http://localhost:80
+
+
+-d
+--detach
+Run container in background and print container ID - o terminal do pc fica livre.
+docker container run --publish 80:80 -d nginx
+docker container run --publish 80:80 --detach nginx
+
+
+--name string
+Assign a name to the container
+
+docker container run --publish 80:80 --detach --name webhost nginx
+Inicia a image do nginx com o nome "webhost"

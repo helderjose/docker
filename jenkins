@@ -5,12 +5,18 @@ https://hub.docker.com/r/jenkins/jenkins
 Usage:
 https://github.com/jenkinsci/docker/blob/master/README.md
 
-docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+docker container run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 http://localhost:8080
 
 
 Primeira execução
-docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+docker container run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 
 Copie o hash gerado no terminal
 http://localhost:8080 -> cole o hash no campo
+
+docker container ls -a
+docker container start <CONTAINER ID> olhe o id do jenkins (se o conteiner do jenkins não existr use run no lugar do start)
+
+docker container ls
+docker container stop <CONTAINER ID>
