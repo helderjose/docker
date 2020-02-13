@@ -2,6 +2,8 @@ https://github.com/microsoft/vscode-docker/issues/1402
 
 https://fedoraproject.org/wiki/Common_F31_bugs#Docker_package_no_longer_available_and_will_not_run_by_default_.28due_to_switch_to_cgroups_v2.29
 
+https://github.com/microsoft/vscode-docker/issues/1402
+
 erro:
 docker run --publish 80:80 nginx
 docker: Error response from daemon: OCI runtime create failed: container_linux.go:346: starting container process caused "process_linux.go:297: applying cgroup configuration for process caused \"open /sys/fs/cgroup/docker/cpuset.cpus.effective: no such file or directory\"": unknown.
