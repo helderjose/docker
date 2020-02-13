@@ -1,0 +1,11 @@
+erro ao executar
+docker run nginx
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:346: starting container process caused "process_linux.go:297: applying cgroup configuration for process caused \"open /sys/fs/cgroup/docker/cpuset.cpus.effective: no such file or directory\"": unknown.
+ERRO[0000] error waiting for container: context canceled
+
+solução Fedora
+https://github.com/microsoft/vscode-docker/issues/1402
+https://docs.fedoraproject.org/en-US/Fedora/23/html/System_Administrators_Guide/sec-Configuring_GRUB_2_Using_the_grubby_Tool.html
+sudo dnf install grubby
+sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
+reiniciar o sistema.
