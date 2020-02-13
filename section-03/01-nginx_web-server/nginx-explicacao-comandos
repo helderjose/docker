@@ -28,11 +28,13 @@ docker run --publish 80:80 nginx
 
 
 docker run (comando antigo)
+docker container run (comando novo depois da estruturação do cli)
 starts a new container from an image.
 --------------------------------------------------------------------
 
 Comando:
-docker run --publish 80:80 --detach nginx
+docker run --publish 80:80 --detach nginx (versão antiga do docker)
+docker container run --publish 80:80 --detach nginx
 
 Now detach tell Docker to run it in the background.
 --------------------------------------------------------------
@@ -59,6 +61,7 @@ Vai exibis os container criados nos comandos anteriores.
 Comando:
 docker container run --publish 80:80 --detach --name webhost nginx
 docker container ls -a
+Na coluna NAMES vai aparecer o nome webhost
 -------------------------------------------------
 
 

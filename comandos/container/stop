@@ -1,0 +1,10 @@
+Stop one or more running containers
+docker container ls
+docker container stop <CONTAINER ID>
+
+
+
+
+
+
+parar container

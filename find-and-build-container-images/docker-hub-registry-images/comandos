@@ -1,0 +1,20 @@
+Esse exemplo mostra onde conseguir imagem
+e faz alguns teste com versão.
+
+alpine é uma linux distributin pequena, 5MB aproximadamente.
+jessie é uma Debian distributin pequena
+
+
+docker image ls
+docker pull nginx // baixa a latest
+docker pull nginx:1.11.9 // baixa a versão especificada
+docker pull nginx:1.11 // baixa latest da 1.11...
+
+
+Execute os comandos:
+docker pull nginx:1.11.9-alpine
+docker image ls
+
+- repare que que a imagem do alpine é a menor;
+- A IMAGE ID repete.
+

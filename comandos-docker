@@ -19,6 +19,14 @@ docker stop dockerName	//para uma imagem
 'docker container start' start an existing stopped one.
 
 
+---- remover container -----
+-- listar container
+docker container ls
+docker ps -a
+-- remover container
+docker container rm -f <conatiner-id>
+
+
 ==============================
 ========== network ==========
 ==============================
