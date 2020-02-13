@@ -5,9 +5,9 @@
 1. dockerfile-basic
 1. running-docker-build
 1. extending-official-images
+1. image-quiz - não criei pasta, são perguntas, olhar no site outro dia.
+1. your-own-dockerfile
 
 
 
-estou assistindo esse
-1. image-quiz
 

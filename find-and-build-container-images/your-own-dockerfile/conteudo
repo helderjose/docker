@@ -1,0 +1,50 @@
+https://docs.docker.com/engine/reference/commandline/login/
+https://docs.docker.com/engine/reference/commandline/logout/
+
+https://hub.docker.com/
+
+
+Pasta "projeto"
+Executar sem usar o docker.
+
+cd projeto
+npm install
+npm run start
+http://localhost:3000/
+------------------------------
+
+
+Pasta "projeto"
+Executar usando docker
+
+cd projeto
+docker build -t testnode .
+docker image ls   // vai ter a testnode
+docker container run --rm -p 80:3000 testnode
+http://localhost
+
+docker container ls  // em outro terminal
+docker container stop <CONTAINER ID>
+docker image ls // vai ter a testnode
+
+docker login -u helderjose --password <MINHA-SENHA>
+
+docker tag testnode helderjose/testing-node
+docker image ls  // vai ter a helderjose/testing-node
+docker push helderjose/testing-node  // vai criar um repositório público no docker hub.
+
+docker image rm helderjose/testing-node  // deleta a imagem local.
+docker image ls  // perceba que não existe mais a helderjose/testing-node
+docker container run --rm -p 80:3000 helderjose/testing-node   // vai baixar do repositório
+http://localhost
+
+docker container ls  // em outro terminal
+docker container stop <CONTAINER ID>
+docker image ls   // vai ter a helderjose/testing-node
+
+docker logout
+--------------------------------
+
+
+
+

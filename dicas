@@ -1,3 +1,8 @@
 Ver quantidade de containers, imagens, quantidade de docker em execução
 quantos estão parados e etc.
 comando: docker info
+
+
+Using Prune to keep your docker system clean:
+Ex: docker image prune to clean up just "dangling" images
+https://www.udemy.com/course/docker-mastery/learn/lecture/7407918#overview
