@@ -1,0 +1,17 @@
+Esse vídeo foi só teoria.
+
+Dockerfile Command Details
+https://docs.docker.com/engine/reference/builder/
+
+
+
+--- package manager ---
+PM's like apt and yum are one of the reasons
+to build containers from Debian, Ubuntu,
+Fedora or CentOS.
+
+--- Environment Variables ---
+One reason they were chosen as preferred chosen as
+preferred way to inject key/value is they work
+everywhere, on every OS and config.
+

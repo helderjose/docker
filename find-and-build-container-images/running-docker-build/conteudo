@@ -1,0 +1,16 @@
+Esses comandos foram executados no vídeo,
+não vai dar para ver funcionando por causa do docker hub. Funciona
+se executar na seguinte pasta:
+
+cd programacao2/docker/udemy-docker-mastery/dockerfile-sample-1
+
+comando:
+docker image build -t customnginx .
+Tem que estar na pasta que tem o arquivo Dockerfile
+-t tag
+. parta atual
+
+comando:
+docker image ls
+
+

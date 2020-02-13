@@ -1,0 +1,21 @@
+
+programacao2/docker/udemy-docker-mastery/dockerfile-sample-2
+
+Na pasta tem o Dockerfile e um index.html.
+Esse exemplo vai executar o docker o nginx e hospedar o index.html,
+vai trocar o arquivo index.html original do nginx pelo da pasta.
+
+comandos:
+cd dockerfile-sample-2
+docker image build -t nginx-with-html .
+docker container run -p 80:80 --rm nginx-with-html
+http://localhost
+docker image tag nginx-with-html:latest bretfisher/nginx-with-html:latest
+docker image ls
+Se fosse um projeto real o próximo passo seria dar push no docker hub.
+
+
+para o container:
+docker container ls
+docker container stop <CONTAINER ID>
+
