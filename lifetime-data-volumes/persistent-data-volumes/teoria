@@ -1,0 +1,9 @@
+Encontrar o "volume" (pasta no container)
+No hub.docker selecione a imagem, clique no dockfile e procure por VOLUME.
+Ex: VOLUME /var/lib/mysql
+
+named volumes
+friendly way to assign volumess to containers
+
+docker volume create
+required to do this before "docker run" to use custom drivers and labels
