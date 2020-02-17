@@ -1,0 +1,5 @@
+docker container run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
+Acho que o $(pwd) faz o mapeamento da pasta atual para a pasta do docker, por
+isso quando cria um arquivo na pasta do host aparece no docker.
+Fazendo isso, que fizer nessa pasta no host, reflete no container e vice versa (se deletar
+algo pelo container vai deletar no host).
