@@ -7,7 +7,9 @@ Comandos dessa sessão
 1. container-lifetime-persist-data - Só explicação do que vamos ver na sessão.
 1. persistent-data-volumes - dá nome para o volume
 1. biding-mounting - usa uma pasta do host no container
+1. database-upgrade-volumes - Atualiza o postgre 9.6.1 para 9.6.2
 
 
 estou nesse
-49 é só explicando o que é para fazer (resposta no próximo).
+1. edit-code-running - Bind Mounts
+

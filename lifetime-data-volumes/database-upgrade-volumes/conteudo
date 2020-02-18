@@ -1,0 +1,13 @@
+Atualizar o container do postgres 9.6.1 para 9.6.2.
+
+
+docker container run -d --name psql -v psql:/var/lib/postgresql/data postgres:9.6.1
+docker container logs -f psql
+docker container stop <CONTAINER ID>
+docker container run -d --name psql2 -v psql:/var/lib/postgresql/data postgres:9.6.2
+docker volume ls
+docker container ps -a
+docker container logs <CONTAINER ID>
+
+docker container ls
+docker container stop <CONTAINER ID>
