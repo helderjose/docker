@@ -1,0 +1,22 @@
+cd compose-sample-2
+cat docker-compose.yml
+
+O arquivo "docker-compose.yml" tem dois containers, um
+com nginx (usado como proxy) e outro com httpd (acho que é um servidor http, acho que é o Apache Server)
+
+docker-compose up
+http://localhost:80
+A página que vemos no navegador é do Apache e não do Nginx.
+
+docker-compose up -d
+http://localhost:80
+-d to run it in the background
+
+docker-compose logs
+docker-compose --help
+docker-compose ps
+docker-compose top
+
+docker-compose down
+para os containners iniciado pelo compose
+
