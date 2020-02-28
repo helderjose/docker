@@ -1,0 +1,30 @@
+A diferença do answer-1 para o answer-2 é o Dockerfile e a linha "image" do drupal.
+
+
+cd compose-assignment-2/answer-1
+
+docker pull drupal
+
+docker image inspect drupal  // procure o metadata "ExposedPorts", para ver a porta que o drupal usa
+
+docker-compose up
+
+http://localhost:8080  // vai aparecer a página de configuração do drupal.
+
+docker-compose down --help
+
+docker-compose down -v  // deve ser executado na pasta do docker-compose.yml
+
+---------------------------------------------------------------------------------
+
+Não entendi o custom-drupal (acho que vem do Dockerfile, mas não entendi)
+
+cd compose-assignment-2/answer-2
+
+docker-compose up
+
+http://localhost:8080  // vai aparecer a página de configuração do drupal.
+
+docker-compose down -v
+
+

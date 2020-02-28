@@ -26,3 +26,17 @@ https://github.com/docker/compose/releases
 Production Servers: Compose vs. Swarm
 https://github.com/BretFisher/ama/issues/8
 
+
+
+Compose File Settings (BOOKMARK AND REVIEW). You'll use it often when making compose files.
+https://docs.docker.com/compose/compose-file/
+
+Don't use Links! It's a legacy feature of compose, and isn't needed
+https://docs.docker.com/compose/compose-file/#links
+
+
+
+(Docker Docs) Compose file build options
+https://docs.docker.com/compose/compose-file/#build
+
+
