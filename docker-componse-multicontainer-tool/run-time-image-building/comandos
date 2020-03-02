@@ -1,0 +1,10 @@
+Compose for Run-Time Image Building and Multi-Container Dev
+
+cd compose-assignment-2/answer
+
+docker-compose up
+localhost:8080   vai abrir a página do drupal
+
+docker-compose down
+
+docker-compose up

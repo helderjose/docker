@@ -1,0 +1,21 @@
+FROM drupal:8.8.2
+
+
+A "\" no final indica que é para incluir a próxima linha no comando.
+RUN apt-get update && apt-get install -y git \
+
+
+Delete that cache because it's at least 10MB taking up our image
+&& rm -rf /var/lib/apt/lists/*
+
+WORKDIR /var/www/html/themes
+
+RUN git clone --branch 8.x-3.x --single-branch --depth 1 https://git.drupal.org/project/bootstrap.git \
+    && chown -R www-data:www-data bootstrap
+
+WORKDIR /var/www/html
+
+
+
+
+
