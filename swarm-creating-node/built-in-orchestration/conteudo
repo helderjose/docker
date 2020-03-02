@@ -1,0 +1,18 @@
+Docker 1.12 Swarm Mode Deep Dive Part 1: Topology (YouTube)
+https://www.youtube.com/watch?v=dooPhkXT9yI
+
+Docker 1.12 Swarm Mode Deep Dive Part 2: Orchestration (YouTube)
+https://www.youtube.com/watch?v=_F6PSP-qhdA
+
+Heart of the SwarmKit: Topology Management (slides)
+https://speakerdeck.com/aluzzardi/heart-of-the-swarmkit-topology-management
+
+Heart of the SwarmKit: Store, Topology & Object Model (YouTube)
+https://www.youtube.com/watch?v=EmePhjGnCXY
+
+Raft Consensus Visualization (Our Swarm DB and how it stays in sync across nodes)
+http://thesecretlivesofdata.com/raft/
+
+
+comandos
+...docker/material-curso/Docker-Mastery-Commands/DM S07 Commands.txt
