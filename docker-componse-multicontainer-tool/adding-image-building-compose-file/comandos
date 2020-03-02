@@ -1,0 +1,15 @@
+cd ...docker/docker-componse-multicontainer-tool/adding-image-building-compose-file/compose-sample-3/
+
+docker-compose up
+http://localhost:80    vai aparecer a página do template bootstrap
+docker-compose up --build
+docker-compose down
+docker image ls
+docker-compose down --help
+
+docker image rm nginx-custom
+docker image ls
+docker-compose up -d
+docker image ls    vai ter o compose-sample-3_proxy
+docker-compose down --help
+docker-compose down --rmi local     // pára o container e deleta a imagem.

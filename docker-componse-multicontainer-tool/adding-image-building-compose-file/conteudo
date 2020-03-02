@@ -2,7 +2,6 @@
 https://docs.docker.com/compose/compose-file/#build
 
 
-Comandos
-cd ...docker/docker-componse-multicontainer-tool/adding-image-building-compose-file/compose-sample-3/
-docker-compose up
-http://localhost:80
+
+
+

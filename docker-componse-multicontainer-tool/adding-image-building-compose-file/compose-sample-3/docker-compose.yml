@@ -9,6 +9,9 @@ services:
       # context: .    current directory
       context: .
       dockerfile: nginx.Dockerfile
+
+    # foi usada na primeira vez que usou docker compose up
+    # image: nginx-custom
     ports:
       - '80:80'
   web:
