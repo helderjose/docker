@@ -28,6 +28,11 @@ docker-machine env node1  // vai retornar a linha: eval $(docker-machine env nod
 eval $(docker-machine env node1)
 docker info  // procure por Name: node1
 
+docker-machine --help
+docker-machine ls
+docker-machine stop <MACHINE NAME>
+docker-machine ls
+
 
 -------------------------
 ----- DigitalOcean -----
