@@ -1,0 +1,28 @@
+Maneiras de criar máquinas com docker (simular ambientes, dev, prod e etc)
+
+
+-----------------------------------
+----- Play With Docker PWD -----
+-----------------------------------
+https://labs.play-with-docker.com/
+Vai liberar uma sessão de 4 horas.
+
+
+fazer login no PWD -> ADD NEW INSTANCE -> crie três instâncias (node1, node2, node3)
+
+selecione a node 1 e execute os comandos:
+docker info
+ping node2
+
+
+------------------------------
+----- Docker Machine -----
+------------------------------
+Foi instalado usando o arquivo instalação.
+Precisa do VirtualBox instalado.
+
+docker-machine create node1
+
+
+
+
