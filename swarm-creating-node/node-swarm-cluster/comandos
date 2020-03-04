@@ -22,7 +22,50 @@ Foi instalado usando o arquivo instalação.
 Precisa do VirtualBox instalado.
 
 docker-machine create node1
+docker-machine ssh node1
+exit
+docker-machine env node1  // vai retornar a linha: eval $(docker-machine env node1)
+eval $(docker-machine env node1)
+docker info  // procure por Name: node1
 
 
+-------------------------
+----- DigitalOcean -----
+-------------------------
+Esse é pago
+https://www.digitalocean.com/?refcode=ee97875d52fa&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=CopyPaste
+
+
+
+
+Obs: Fiz no https://labs.play-with-docker.com/
+Crie as três máquinas, node1, node2, node3'
+
+node1:
+docker swarm init  // vai dar erro de ip
+
+docker swarm init --advertise-addr TAB COMPLETION
+docker swarm init --advertise-addr 192.168.0.18  // pequei o primeiro da lista que apareceu
+Vai retorar a linha "docker swarm join ...", ex:
+docker swarm join --token SWMTKN-1-5tqh902hmju3cs28ee6wx6zatx1ghre7w67isk9ssaw05wkvo2-880k5iaq61b2rilvnahjyi1q1 192.168.0.18:2377
+copie e cole no node2
+
+node1:
+docker node ls  // vai listar a node1 e node2
+node2:
+docker node ls  // vai retornar um erro porque a node1 é a Leader
+
+node1:
+docker node update --role manager node2
+docker node ls   // olhe a coluna MANAGER STATUS,  a node2 agora está como Reachable
+docker swarm join-token manager  // vai retornar a linha com um token, copie e cole na node3
+
+node1:
+docker node ls  // vai aparecer a linha da node3
+docker service create --replicas 3 alpine ping 8.8.8.8
+docker service ls  // vai ter 3/3 REPLICAS
+docker node ps  // exibe apenas um, as réplicas são clusters, para o caso de uma cair a outra assue.
+docker node ps node2
+docker service ps eloquent_sinoussi  // eloquent_sinoussi era o valor na coluna NAME
 
 
