@@ -1,0 +1,16 @@
+https://docs.docker.com/engine/swarm/ingress/
+
+
+https://labs.play-with-docker.com/
+
+fiz no meu pc mesmo.
+node1:
+docker service create --name search --replicas 3 -p 9200:9200 elasticsearch:2
+docker service ps search
+
+o meu ficou travado aqui, mas retorna um json com informações do cluster,
+se chamar várias vezes, vai mudar o metadado "name", o load balancer
+gerencia qual server chamar
+curl localhost:9200
+
+
