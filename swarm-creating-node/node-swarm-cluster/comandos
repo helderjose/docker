@@ -12,7 +12,7 @@ fazer login no PWD -> ADD NEW INSTANCE -> crie três instâncias (node1, node2, 
 
 selecione a node 1 e execute os comandos:
 docker info
-ping node2
+ping IP-DO-node2
 
 
 ------------------------------

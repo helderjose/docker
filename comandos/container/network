@@ -1,0 +1,4 @@
+Na sessão swarm.
+docker network create -d overlay backend
+overlay network is the only kind of network we can use in a swarm, because overlay allows us to
+span across nodes, as if they're all on the local network.

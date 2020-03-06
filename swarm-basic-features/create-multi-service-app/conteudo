@@ -1,2 +1,54 @@
 Create Multi-Service App
 
+resposta do exercício na pasta swarm-app-1
+
+## Assignment Answers: Create a Multi-Service Multi-Node Web App
+
+Obs: ele tinha 3 nodes docker
+
+Fiz no play with docker
+Criei os nodes, node1, node2 e node3
+
+node1:
+docker swarm init --advertise-addr IP-DO-node1
+copie o comando docker swarm join retornado e execute na node2 e node3
+
+node1:
+docker node ls // terá 3 nodes
+docker ps -a // não vai ter nada
+docker service ls // não vai ter nada
+docker network create -d overlay backend  // overlay network is the only kind of network we can use in a swarm, because overlay allows us to span across nodes, as if they're all on the local network.
+docker network create -d overlay frontend
+
+
+/*
+As seguintes informações foram pegas no readme.md da pasta swarm-app-1
+bretfisher/examplevotingapp_vote
+bretfisher/examplevotingapp_worker:java
+--mount type=volume,source=db-data,target=/var/lib/postgresql/data
+postgres:9.4
+
+Obs: o service name db deu detected task failure no play with docker, não consegui continuar.
+*/
+docker service create --name vote -p 80:80 --network frontend --replicas 2 bretfisher/examplevotingapp_vote
+docker service create --name redis --network frontend --replicas 1 redis:3.2
+docker service create --name worker --network frontend --network backend bretfisher/examplevotingapp_worker:java
+docker service create --name db --network backend --mount type=volume,source=db-data,target=/var/lib/postgresql/data postgres:9.4
+docker service create --name result --network backend -p 5001:80 bretfisher/examplevotingapp_result
+
+docker service ls // vai aparecer os services criados acima.
+docker service ps result // informações apenas do service "result"
+docker service ps redis // informações apenas do service "redis"
+docker service ps db
+docker service ps vote
+docker service ps worker
+
+cat /etc/docker/   // cat etc/docker/daemon.json
+docker service logs worker // enabled by default in 17.05 and newer!
+docker service ps worker
+
+no browser: (tem que ver se é o ip do node1 ou de alguma virtual lan)
+104.236.114.90, não cheguei até aqui porque no play with docker deu problema, mas no
+vídeo apareceu a aplicação de votar.
+104.236.114.90:5001
+
