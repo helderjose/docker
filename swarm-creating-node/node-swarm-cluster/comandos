@@ -18,7 +18,7 @@ ping IP-DO-node2
 ------------------------------
 ----- Docker Machine -----
 ------------------------------
-Foi instalado usando o arquivo instalação.
+O docker machine foi instalado usando o arquivo instalação do começo desse curso.
 Precisa do VirtualBox instalado.
 
 docker-machine create node1
