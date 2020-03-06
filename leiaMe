@@ -79,5 +79,12 @@ https://www.digitalocean.com/?refcode=ee97875d52fa&utm_campaign=Referral_Invite&
 
 
 
+Features Not Supported In Stack Deploy
+https://docs.docker.com/compose/compose-file/#not-supported-for-docker-stack-deploy
+
+Production Servers: Compose vs. Swarm
+https://github.com/BretFisher/ama/issues/8
+
+
 
 
