@@ -22,7 +22,12 @@ O docker machine foi instalado usando o arquivo instalação do começo desse cu
 Precisa do VirtualBox instalado.
 
 docker-machine create node1
+docker-machine create node2
+docker-machine create node3
+// Abra três abas no terminator
 docker-machine ssh node1
+docker-machine ssh node2
+docker-machine ssh node3
 exit
 docker-machine env node1  // vai retornar a linha: eval $(docker-machine env node1)
 eval $(docker-machine env node1)
