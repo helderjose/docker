@@ -6,12 +6,13 @@ resposta do exercício na pasta swarm-app-1
 
 Obs: ele tinha 3 nodes docker
 
-Fiz no play with docker
-Criei os nodes, node1, node2 e node3
+Fiz no com docker machine, para usar as máquinas dos vídeos anteriores.
 
-node1:
-docker swarm init --advertise-addr IP-DO-node1
-copie o comando docker swarm join retornado e execute na node2 e node3
+VBoxManage list vms
+VBoxManage startvm node1 --type headless
+VBoxManage startvm node2 --type headless
+VBoxManage startvm node3 --type headless
+VBoxManage controlvm node1 poweroff soft && VBoxManage controlvm node2 poweroff soft && VBoxManage controlvm node3 poweroff soft
 
 node1:
 docker node ls // terá 3 nodes
