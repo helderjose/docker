@@ -1,0 +1,81 @@
+# Using Secrets in Swarm Services
+
+Manage sensitive data with Docker secrets (Docker Docs) (Lots of good reading and examples)
+https://docs.docker.com/engine/swarm/secrets/
+
+
+Fiz esse exemplo usando docker machine
+docker-machine ls
+docker-machine rm node1 node2 node3
+
+docker-machine create node1
+docker-machine create node2
+docker-machine create node3
+
+
+/*
+Pasta compartilhada:
+shared-folder é o nome que a pasta vai aparecer na node1, ex: /shared-folder
+*/
+docker-machine stop node1
+VBoxManage sharedfolder add node1 --name shared-folder --hostpath /home/accurate/virtual-box-vms/shared --automount
+
+// Abra três abas no terminator
+docker-machine ssh node1
+docker-machine ssh node2
+docker-machine ssh node3
+
+
+node1:
+docker swarm init --advertise-addr <IP-DA-node1 TAB-TO-COMPLETE>
+Cole o retono "docker swarm join" na node2 e node3
+
+cd /shared-folder  // coloque o arquivo psql_user.txt na .../virtual-box-vms/shared
+no terminal da node1 vai ficar assim docker@node1:/shared-folder$
+
+cat psql_user.txt
+obs: a parte de criar a senha fica disponíveis para todos os nodes fizer "join" em node1.
+docker secret create psql_user psql_user.txt  // esse estava no arquivo, no vídeo usou o anterio: docker secret create psql_usr psql_usr.txt
+echo "myDBpassWORD" | docker secret create psql_pass - TAB COMPLETION    //EX: echo "myDBpassWORD" | docker secret create psql_pass psql_user.txt
+docker secret ls
+docker secret inspect psql_user  // não vai exibir informações da senha
+docker service create --name psql --secret psql_user --secret psql_pass -e POSTGRES_PASSWORD_FILE=/run/secrets/psql_pass -e POSTGRES_USER_FILE=/run/secrets/psql_user postgres
+docker service ps psql
+
+// ------------ início bloco ------------
+//TODO:// não conseguir arrumar
+https://www.udemy.com/course/docker-mastery/learn/lecture/6795744#questions/6264218
+/*
+Esse bloco não funcionou.
+Esse comando não funcionou no meu porque não consegui pegar o id do container no service,
+tentei
+https://stackoverflow.com/questions/43868379/how-to-get-container-id-of-a-docker-service
+mas não consegui pegar o id do container dentro do service.
+
+assim pega o container id:
+docker service ps -q psql  //"service id" b9mrb5jm4zqr2t8rpvo3322y7
+docker inspect node1 b9mrb5jm4zqr2t8rpvo3322y7  // procure por ContainerID
+ou
+docker service ps psql //"service id" b9mrb5jm4zqr
+docker inspect node1 b9mrb5jm4zqr // procure por ContainerID
+
+// docker exec -it psql.1.CONTAINER NAME bash
+docker exec -it psql.1.8e7991fbceded7f14a27211e027fa19a1185ec6feb9f784e40d6bb5b42f29352 bash // deu que não o container não existe.
+
+*/
+
+// ------------ fim bloco ------------
+
+
+ls /run/secrets/
+
+
+
+
+
+
+docker logs TAB COMPLETION
+
+docker service ps psql
+
+docker service update --secret-rm

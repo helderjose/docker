@@ -34,6 +34,8 @@ docker service rm <IDs-DOS-SERVICES>
 docker container ls
 docker container rm <IDs-DOS-SERVICES>
 
+obs: fiz copiando o arquivo para a docker-machine, mas acho que dá para fazer usando "work dir" igual quando
+usa um container.
 copia o arquivo example-voting-app-stack.yml do host para a node1
 scp accurate@192.168.57.91:/data/helder/programacao2/docker/docker/swarm-basic-features/swarm-stack-production/swarm-stack-1/example-voting-app-stack.yml ./
 

@@ -87,4 +87,10 @@ https://github.com/BretFisher/ama/issues/8
 
 
 
+Manage sensitive data with Docker secrets (Docker Docs) (Lots of good reading and examples)
+https://docs.docker.com/engine/swarm/secrets/
+
+
+
+
 
