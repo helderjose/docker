@@ -1,2 +1,18 @@
 # Using Secrets With Local Docker Compose
 
+cd secrets-sample-2
+docker node ls  // vai dar um erro porque o host não é um swarm manager. (se o host estiver como swarm manager, não vaidar erro)
+docker-compose up -d
+docker-compose exec psql cat /run/secrets/psql_user
+cat docker-compose.yml
+
+OBS:
+docker-compose exec psql cat /run/secrets/psql_user
+compose não é seguro, o comando funciona apenas para dev, não é igual para prod,
+é só para poder funcionar local para development.
+
+
+
+Caso o host seja um swarm manager, execute os seguintes comandos para deixar de ser.
+docker swarm leave --force
+docker node ls  // deve retornar um erro, "this node is not a swarm manager".
