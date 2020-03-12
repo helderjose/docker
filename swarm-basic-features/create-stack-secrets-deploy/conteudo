@@ -1,0 +1,17 @@
+# Create a Stack with Secrets and Deploy
+
+- Criar três docker-machine (node1, node2, node3);
+- Colocar as três para trabalharem juntas (olhar aulas anteriores);
+- compartilhe uma pasta com a node1 e coloque o docker-compose.yml nela.
+
+node1:
+vim docker-compose.yml
+docker stack deploy - c docker-compose.yml drupal  // vai dar um erro por causa do psql-pw
+echo STRING |docker secret create psql-ps - VALUE  // comando executado no vídeo: echo STRING |docker secret create psql-ps -
+docker stack deploy -c docker-compose.yml drupal
+docker stack ps drupal
+
+http://node1:8080   ou o ip do node1
+
+
+

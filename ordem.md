@@ -3,10 +3,10 @@
 1. lifetime-data-volumes
 1. docker-componse-multicontainer-tool
 1. swarm-creating-node
-
+1. swarm-basic-features
 
 
 estou fazendo esse
-1. swarm-basic-features
+1. swarm-app-lifecycle
 
 
