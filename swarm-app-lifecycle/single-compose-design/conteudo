@@ -1,0 +1,28 @@
+# Full App Lifecycle: Dev, Build and Deploy With a Single Compose Design
+
+Using Multiple Compose Files (Docker Docs)
+https://docs.docker.com/compose/extends/#multiple-compose-files
+
+
+Using Compose Files In Production (Docker Docs)
+https://docs.docker.com/compose/production/
+
+
+
+docker-compose up -d
+
+docker inspect TAB COMPLETION
+
+docker-compose down
+
+docker-compose -f docker-compose.yml -f docker-compose.test.yml up -d
+
+docker inspect TAB COMPLETION
+
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml config --help
+
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml config
+
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml config > output.yml
+
+
