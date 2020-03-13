@@ -95,3 +95,8 @@ https://docs.docker.com/engine/swarm/secrets/
 Secrets In Compose Files (Docker Docs)
 https://docs.docker.com/compose/compose-file/#secrets-configuration-reference
 
+
+
+Service Update command (Docker Docs)
+https://docs.docker.com/engine/reference/commandline/service_update/
+
