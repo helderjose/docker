@@ -5,3 +5,23 @@ Service Update command (Docker Docs)
 https://docs.docker.com/engine/reference/commandline/service_update/
 
 
+docker swarm init --advertise-addr 192.168.57.91   // o ip é da minha máquina local
+// como é local, não executei esse comando: docker swarm join --token SWMTKN-1-12729faxmbmjscosnzepzcadjx3qfst9rghcycu2dna0ehb2x6-5izq77duzocdrger4zjh19epv 192.168.57.91:2377
+
+docker service --help
+docker service create -p 8088:80 --name web nginx:1.13.7
+docker service ls
+docker service scale web=5  // aumenta para 5 réplicas
+docker service ls  // olhar coluna REPLICAS
+docker service update --image nginx:1.13.6 web  //atualiza o nginx do service web
+
+docker service update --publish-rm 8088 --publish-add 9090:80 web
+docker service ls // a porta 8088 continuou aparecendo na coluna PORTS
+http://localhost:8088
+http://localhost:9090
+
+
+docker service update --force web
+docker service ls
+docker service rm web
+
