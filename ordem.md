@@ -4,9 +4,9 @@
 1. docker-componse-multicontainer-tool
 1. swarm-creating-node
 1. swarm-basic-features
+1. swarm-app-lifecycle
 
 
 estou fazendo esse
-1. swarm-app-lifecycle
-
+1. container-registries
 

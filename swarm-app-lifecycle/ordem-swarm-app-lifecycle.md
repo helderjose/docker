@@ -5,6 +5,5 @@
 
 tem quiz nessas aulas - "Section 9: Swarm App Lifecycle
 
-estou no:
 
 
