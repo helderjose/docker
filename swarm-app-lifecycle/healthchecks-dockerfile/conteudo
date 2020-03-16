@@ -1,4 +1,27 @@
 # Healthchecks in Dockerfiles
 
 
-pegar o material da aula
+PHP Laravel Good Defaults with Docker
+https://github.com/BretFisher/php-docker-good-defaults
+
+HEALTHCHECK in Dockerfile (Docker Docs)
+https://docs.docker.com/engine/reference/builder/#healthcheck
+
+Healthcheck in Compose files (Docker Docs)
+https://docs.docker.com/compose/compose-file/#healthcheck
+
+
+
+
+# Comandos
+
+docker container run --name p1 -e POSTGRES_PASSWORD=mypass -d postgres
+docker container ls
+docker container run --name p2 -e POSTGRES_PASSWORD=mypass -d --health-cmd="pg_isready -U postgres || exit 1" postgres
+docker container ls  // olhar a coluna "STATUS"
+docker container inspect p2  // procure o metadata "Health"
+
+docker service create --name p1 -e POSTGRES_PASSWORD=mypass postgres
+docker service create --name p2 -e POSTGRES_PASSWORD=mypass --health-cmd="pg_isready -U postgres || exit 1" postgres
+docker service ls
+docker service rm p1 p2
