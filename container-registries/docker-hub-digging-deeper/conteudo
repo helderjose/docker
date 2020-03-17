@@ -1,1 +1,11 @@
-baixar o material da aula
+# Docker Hub: Digging Deeper
+
+Mostra como criar um repositório no docker hub e lincar com um repositório
+github ou bitbucket.
+
+
+Docker Hub
+https://hub.docker.com/
+
+helderjose
+senha padrão repetindo o último caractere
