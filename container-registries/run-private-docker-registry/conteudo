@@ -4,41 +4,26 @@
 
 Comandos
 
-
 docker container run -d -p 5000:5000 --name registry registry
-
 docker container ls
-
 docker image ls
-
 docker pull hello-world
-
 docker run hello-world
-
 docker tag hello-world 127.0.0.1:5000/hello-world
-
-docker image ls
-
-docker push 127.0.0.1:5000/hello-world
-
+docker image ls // vai ter as imagens "hello-world" e a "127.0.0.1:5000/hello-world"
+docker push 127.0.0.1:5000/hello-world  // parece que é push no local registry
 docker image remove hello-world
-
+docker image remove 127.0.0.1:5000/hello-world  // vai dar erro, remova o container que tem na msg de erro
+docker container rm <IMAGE-ID>
 docker image remove 127.0.0.1:5000/hello-world
-
-docker container rm admiring_stallman
-
-docker image remove 127.0.0.1:5000/hello-world
-
 docker image ls
-
 docker pull 127.0.0.1:5000/hello-world:latest
-
 docker container kill registry
-
 docker container rm registry
 
-docker container run -d -p 5000:5000 --name registry -v $(pwd)/registry-data:/var/lib/registry registry TAB COMPLETION
-
+cd .../registry-sample-1
+docker container run -d -p 5000:5000 --name registry -v $(pwd)/registry-data:/var/lib/registry registry
 docker image ls
-
 docker push 127.0.0.1:5000/hello-world
+ll registry-data // vai ter a pasta docker
+tree registry-data
