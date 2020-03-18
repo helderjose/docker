@@ -7,5 +7,7 @@ tem quiz no final dessas aulas
 1. run-private-docker-registry
 1. secure-docker-registry-tls-authentication
 
-estou no
 
+
+estou no
+1. docker-registry-swarm
