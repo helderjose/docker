@@ -6,7 +6,10 @@
 1. swarm-basic-features
 1. swarm-app-lifecycle
 1. container-registries
+1. docker-in-production
+
+
 
 estou fazendo esse
-1. docker-in-production
+
 
