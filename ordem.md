@@ -7,9 +7,9 @@
 1. swarm-app-lifecycle
 1. container-registries
 1. docker-in-production
-
+1. what-and-why-kubernetes
 
 
 estou fazendo esse
-1. what-and-why-kubernetes
+1. kubernetes-install-first-pods
 
