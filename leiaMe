@@ -124,3 +124,26 @@ https://kubernetes.io/
 List of Certified Kubernetes Distributions
 https://kubernetes.io/partners/#conformance
 
+
+Kubernetes Components
+https://kubernetes.io/docs/concepts/overview/components/#master-components
+
+
+
+Minikube Download
+https://github.com/kubernetes/minikube/releases/
+
+MikroK8s for Linux Hosts
+https://github.com/ubuntu/microk8s
+
+Install kubectl on Windows when you don't have Docker Desktop
+https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows
+
+Katacoda Kubernetes in a Browser
+https://www.katacoda.com/courses/kubernetes/playground
+
+Play-with-K8s in a Browser
+https://play-with-k8s.com/
+
+
+
