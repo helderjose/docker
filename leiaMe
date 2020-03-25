@@ -147,3 +147,13 @@ https://play-with-k8s.com/
 
 
 
+Pod Overview (docs)
+https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
+
+Service (docs)
+https://kubernetes.io/docs/concepts/services-networking/service/
+
+Namespace (docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+
+

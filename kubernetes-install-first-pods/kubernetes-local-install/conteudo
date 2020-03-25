@@ -16,3 +16,22 @@ Play-with-K8s in a Browser
 https://play-with-k8s.com/
 
 
+
+
+http://play-with-k8s.com
+
+katacoda.com
+
+### minikube
+
+minikube-installer.exe
+
+minikube start
+
+### microk8s
+
+microk8s.kubectl
+
+microk8s.enable dns
+
+alias kubectl=microk8s.kubectl
