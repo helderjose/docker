@@ -157,3 +157,11 @@ Namespace (docs)
 https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
 
 
+
+Kubectl Cheat Sheet
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+Kubectl for Docker Users
+https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
+
+
