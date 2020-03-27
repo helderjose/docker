@@ -10,18 +10,18 @@ Kubectl for Docker Users
 https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
 
 
-estou: instalei o MikroK8s, continuar o vídeo
 
 # Comandos
 
 kubectl version
-
 kubectl run my-nginx --image nginx
-
-kubectl get pods
-
-kubectl get all
-
+kubectl get pods  // lista os pods
+kubectl get all  //  lista os services, pods e etc
 kubectl delete deployment my-nginx
+kubectl get all  // vai ter apenas uma linha do service
 
-kubectl get all
+
+
+
+
+
