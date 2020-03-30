@@ -1,0 +1,27 @@
+# Inspecting Kubernetes Objects
+
+Stern: for better multi-node log viewing at the CLI
+https://github.com/wercker/stern
+
+
+
+# Comandos
+kubectl get pods
+
+kubectl logs deployment/my-apache
+
+kubectl logs deployment/my-apache --follow --tail 1
+
+kubectl logs -l run=my-apache
+
+kubectl get pods
+
+kubectl describe pod/my-apache-<pod id>
+
+kubectl get pods -w
+
+kubectl delete pod/my-apache-<pod id>
+
+kubectl get pods
+
+kubectl delete deployment my-apache

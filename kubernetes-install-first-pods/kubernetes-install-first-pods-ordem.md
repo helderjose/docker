@@ -3,7 +3,9 @@
 1. kubernetes-local-install
 1. kubernetes-container-abstractions
 1. kubectl-run-create-apply
+1. first-pod-kubctl
+1. scaling-replica-sets
 
 
 estou no
-1. first-pod-kubctl
+1. inspecting-kubernetes-object

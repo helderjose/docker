@@ -165,3 +165,8 @@ Kubectl for Docker Users
 https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
 
 
+
+Stern: for better multi-node log viewing at the CLI
+https://github.com/wercker/stern
+
+
