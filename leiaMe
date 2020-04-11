@@ -170,3 +170,9 @@ Stern: for better multi-node log viewing at the CLI
 https://github.com/wercker/stern
 
 
+
+Service (docs)
+https://kubernetes.io/docs/concepts/services-networking/service/
+
+Service Types (docs tutorial)
+https://kubernetes.io/docs/tutorials/services/

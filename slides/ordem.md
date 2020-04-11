@@ -2,5 +2,5 @@
 1. container-registries
 1. kubernetes-intro
 1. basit-terms-system-parts
-
+1. exposing-kubernetes-ports
 

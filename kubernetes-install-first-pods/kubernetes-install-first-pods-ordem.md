@@ -5,7 +5,6 @@
 1. kubectl-run-create-apply
 1. first-pod-kubctl
 1. scaling-replica-sets
-
-
-estou no
 1. inspecting-kubernetes-object
+
+
