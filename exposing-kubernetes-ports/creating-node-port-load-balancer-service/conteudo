@@ -1,0 +1,20 @@
+# Creating a NodePort and LoadBalancer Service
+
+# comandos
+kubectl get all
+
+kubectl expose deployment/httpenv --port 8888 --name httpenv-np --type NodePort
+
+kubectl get services
+
+curl localhost:32334
+
+kubectl expose deployment/httpenv --port 8888 --name httpenv-lb --type LoadBalancer
+
+kubectl get services
+
+curl localhost:8888
+
+kubectl delete service/httpenv service/httpenv-np
+
+kubectl delete service/httpenv-lb deployment/httpenv
