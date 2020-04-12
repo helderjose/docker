@@ -1,0 +1,7 @@
+# Imperative vs. Declarative
+
+Vídeo teórico.
+
+# Comandos
+kubectl apply -f my-resources.yaml
+kubectl run
