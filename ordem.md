@@ -9,7 +9,8 @@
 1. docker-in-production
 1. what-and-why-kubernetes
 1. kubernetes-install-first-pods
+1. exposing-kubernetes-ports
 
 
 estou fazendo esse
-1. exposing-kubernetes-ports
+1. kubernetes-management-techniques
