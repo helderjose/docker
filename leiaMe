@@ -189,3 +189,7 @@ https://www.coredns.io/plugins/kubernetes/
 
 kubectl Usage Conventions (docs)
 https://kubernetes.io/docs/reference/kubectl/conventions/
+
+Kubectl Usage Best Practices (docs)
+https://kubernetes.io/docs/reference/kubectl/conventions/#best-practices
+
