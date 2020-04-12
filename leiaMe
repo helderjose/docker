@@ -184,3 +184,8 @@ https://github.com/kubernetes/dns/blob/master/docs/specification.md
 
 CoreDNS for Kubernetes
 https://www.coredns.io/plugins/kubernetes/
+
+
+
+kubectl Usage Conventions (docs)
+https://kubernetes.io/docs/reference/kubectl/conventions/
