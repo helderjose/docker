@@ -10,7 +10,8 @@
 1. what-and-why-kubernetes
 1. kubernetes-install-first-pods
 1. exposing-kubernetes-ports
+1. kubernetes-management-techniques
 
 
 estou fazendo esse
-1. kubernetes-management-techniques
+1. declarative-kubernetes-yaml - Moving to Declarative Kubernetes YAML
