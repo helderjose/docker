@@ -1,5 +1,7 @@
 # Kubernetes Configuration YAML
 
+Apenas falou sobre os arquivos, no próximo exemplo começa a criar.
+
 Understanding Kubernetes Objects and Spec's (Docs)
 https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/
 
