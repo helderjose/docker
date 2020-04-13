@@ -1,0 +1,21 @@
+# kubectl apply
+
+Declarative Management of Kubernetes (Docs)
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/
+
+O vídeo foi apenas explicação dos comandos, não executou nenhum.
+
+
+# Comandos
+
+kubectl apply -f filename.yml  // create/update resources in a file
+
+kubectl apply -f myfile.yaml
+
+kubectl apply -f myyaml/  // create/update a whole directory of yaml
+
+kubectl apply -f https://bret.run/pod.yml  // create/update from a URL
+
+curl -L https://bret.run/pod
+
+start https://bret.run/pod.yml

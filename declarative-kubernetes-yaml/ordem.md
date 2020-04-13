@@ -1,5 +1,5 @@
+1. section-intro
 
 
 estou:
-1. section-intro
-
+1. kubectl-apply
