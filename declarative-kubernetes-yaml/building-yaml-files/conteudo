@@ -1,0 +1,7 @@
+# Building Your YAML Files
+
+# Comandos
+systemctl start docker
+
+kubectl api-resources
+kubectl api-versions
