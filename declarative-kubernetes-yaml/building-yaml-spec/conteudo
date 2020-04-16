@@ -1,0 +1,14 @@
+# Building Your YAML Spec
+
+
+Kubernetes API Reference (Docs)
+https://kubernetes.io/docs/reference/#api-reference
+
+
+# Comandos
+kubectl explain services --recursive  // get all the keys each kind supports
+kubectl explain services.spec
+kubectl explain services.spec.type  // We can wal through the spec this way
+
+// epec: can have sub spec: of other resources
+kubectl explain deployment.spec.template.spec.volumes.nfs.server
