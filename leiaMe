@@ -217,3 +217,5 @@ Kubernetes API Reference (Docs)
 https://kubernetes.io/docs/reference/#api-reference
 
 
+APIServer dry-run and kubectl diff
+https://kubernetes.io/blog/2019/01/14/apiserver-dry-run-and-kubectl-diff/
