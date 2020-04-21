@@ -1,0 +1,15 @@
+# CRD's and The Operator Pattern
+
+Vídeo teórico
+
+Custom Resources (Docs)
+https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
+
+The Operator Pattern (Docs)
+https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
+
+OperatorHub
+https://operatorhub.io/
+
+Awesome Operators List
+https://github.com/operator-framework/awesome-operators

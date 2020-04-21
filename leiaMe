@@ -240,3 +240,67 @@ https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
 
 
 
+Volumes (Docs)
+https://kubernetes.io/docs/concepts/storage/volumes/
+
+StatefulSets (Docs)
+https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
+
+PersistentVolume (Docs)
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
+
+
+
+Ingress (Docs)
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+Ingress Controllers (Docs)
+https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
+
+Set up Ingress on Minikube with the NGINX Ingress Controller (Docs)
+https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+
+Traefik Ingress
+https://docs.traefik.io/v2.0/providers/kubernetes-crd/#traefik-ingressroute-definition
+
+
+
+Custom Resources (Docs)
+https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
+
+The Operator Pattern (Docs)
+https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
+
+OperatorHub
+https://operatorhub.io/
+
+Awesome Operators List
+https://github.com/operator-framework/awesome-operators
+
+
+
+Spreadsheet of Kubernetes Deployment Tools
+https://docs.google.com/spreadsheets/d/1FCgqz1Ci7_VCz_wdh8vBitZ3giBtac_H8SBw4uxnrsE/edit#gid=0
+
+Deploying Compose on Kubernetes
+https://github.com/docker/compose-on-kubernetes/tree/master/docs
+
+Introducing Kustomize
+https://kubernetes.io/blog/2018/05/29/introducing-kustomize-template-free-configuration-customization-for-kubernetes/
+
+Kustomize (GitHub)
+https://github.com/kubernetes-sigs/kustomize
+
+Docker App (GitHub)
+https://github.com/docker/app
+
+CNAB spec
+https://cnab.io/
+
+
+
+The Kubernetes Dashboard
+https://github.com/kubernetes/dashboard
+
+
+

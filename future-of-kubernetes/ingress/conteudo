@@ -1,0 +1,15 @@
+# Ingress
+
+Vídeo teórico
+
+Ingress (Docs)
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+Ingress Controllers (Docs)
+https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
+
+Set up Ingress on Minikube with the NGINX Ingress Controller (Docs)
+https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+
+Traefik Ingress
+https://docs.traefik.io/v2.0/providers/kubernetes-crd/#traefik-ingressroute-definition

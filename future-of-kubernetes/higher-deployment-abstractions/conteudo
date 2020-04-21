@@ -1,0 +1,22 @@
+# Higher Deployment Abstractions
+
+Vídeo teórico
+
+Spreadsheet of Kubernetes Deployment Tools
+https://docs.google.com/spreadsheets/d/1FCgqz1Ci7_VCz_wdh8vBitZ3giBtac_H8SBw4uxnrsE/edit#gid=0
+
+Deploying Compose on Kubernetes
+https://github.com/docker/compose-on-kubernetes/tree/master/docs
+
+Introducing Kustomize
+https://kubernetes.io/blog/2018/05/29/introducing-kustomize-template-free-configuration-customization-for-kubernetes/
+
+Kustomize (GitHub)
+https://github.com/kubernetes-sigs/kustomize
+
+Docker App (GitHub)
+https://github.com/docker/app
+
+CNAB spec
+https://cnab.io/
+
