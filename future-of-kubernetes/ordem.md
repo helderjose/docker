@@ -10,7 +10,6 @@ interessantes.
 1. operator-pattern
 1. higher-deployment-abstractions
 1. kubernetes-dashboard
-
-
-estou no:
 1. namespaces-context
+1. future-of-kubernetes
+

@@ -12,7 +12,8 @@
 1. exposing-kubernetes-ports
 1. kubernetes-management-techniques
 1. declarative-kubernetes-yaml - Moving to Declarative Kubernetes YAML
+1. future-of-kubernetes
 
 
 estou fazendo esse
-1. future-of-kubernetes
+1. docker-security
