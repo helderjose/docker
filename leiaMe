@@ -304,3 +304,11 @@ https://github.com/kubernetes/dashboard
 
 
 
+Configure Access to Multiple Clusters (Docs)
+https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
+
+Namespaces (Docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+
+
+
