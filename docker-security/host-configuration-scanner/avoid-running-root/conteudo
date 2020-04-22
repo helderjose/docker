@@ -1,0 +1,10 @@
+# Using USER in Dockerfiles to Avoid Running
+
+
+
+
+Sample Dockerfile of using USER in a Node.js App
+https://github.com/BretFisher/dockercon19/blob/master/1.Dockerfile
+
+Docs: USER Stanza in Dockerfiles
+https://docs.docker.com/engine/reference/builder/#user

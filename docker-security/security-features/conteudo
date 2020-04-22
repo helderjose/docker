@@ -1,0 +1,9 @@
+# Docker Engine's Out-Of-The-Box Security Features
+
+Dicas de seguranção (não tem exemplo prático)
+
+Docs: Seccomp security profiles
+https://docs.docker.com/engine/security/seccomp/
+
+Docs: AppArmor security profiles
+https://docs.docker.com/engine/security/apparmor/

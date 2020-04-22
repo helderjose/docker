@@ -320,3 +320,36 @@ https://kubernetes.io/docs/setup/release/notes/
 My list of security objectives for Docker projects
 https://github.com/BretFisher/ama/issues/17
 
+
+
+Docker Engine Security
+https://docs.docker.com/engine/security/security/
+
+Big List of Docker Security Tools
+https://sysdig.com/blog/20-docker-security-tools/
+
+
+
+Docs: Seccomp security profiles
+https://docs.docker.com/engine/security/seccomp/
+
+Docs: AppArmor security profiles
+https://docs.docker.com/engine/security/apparmor/
+
+
+
+Docker Bench
+https://github.com/docker/docker-bench-security
+
+CIS Benchmark for Securing Docker
+https://www.cisecurity.org/benchmark/docker/
+
+
+
+Sample Dockerfile of using USER in a Node.js App
+https://github.com/BretFisher/dockercon19/blob/master/1.Dockerfile
+
+Docs: USER Stanza in Dockerfiles
+https://docs.docker.com/engine/reference/builder/#user
+
+
