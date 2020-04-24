@@ -18,6 +18,6 @@
 
 
 estou fazendo esse
-1. devops-docker-clips
+1. devops-docker-clips - pendente, é um question and answer
 
 
