@@ -14,9 +14,10 @@
 1. declarative-kubernetes-yaml - Moving to Declarative Kubernetes YAML
 1. future-of-kubernetes
 1. docker-security
+1. docker-new-features - pendente, são vídeos grandes sobre os novos recursos
 
 
 estou fazendo esse
-1. docker-new-features
+1. devops-docker-clips
 
 
