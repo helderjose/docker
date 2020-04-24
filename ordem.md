@@ -13,7 +13,10 @@
 1. kubernetes-management-techniques
 1. declarative-kubernetes-yaml - Moving to Declarative Kubernetes YAML
 1. future-of-kubernetes
+1. docker-security
 
 
 estou fazendo esse
-1. docker-security
+1. docker-new-features
+
+

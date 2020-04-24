@@ -353,3 +353,62 @@ Docs: USER Stanza in Dockerfiles
 https://docs.docker.com/engine/reference/builder/#user
 
 
+
+More Info on User Namespaces
+https://integratedcode.us/2015/10/13/user-namespaces-have-arrived-in-docker/
+
+Docs: How to Use User Namespaces
+https://docs.docker.com/engine/security/userns-remap/
+
+
+
+CVE Database
+https://cve.mitre.org/
+
+Snyk, one of the ways to scan your Git repos and Images
+https://snyk.io/
+
+What Is Shift Left Security?
+https://www.twistlock.com/resources/shift-left-security/
+
+Aqua MicroScanner, to scan your images during docker build
+https://github.com/aquasecurity/microscanner
+
+Aqua Trivy, to scan your images after their built
+https://github.com/aquasecurity/trivy
+
+
+
+Sysdig Falco
+https://sysdig.com/opensource/falco/
+
+Docker Content Trust
+https://docs.docker.com/engine/security/trust/content_trust/
+
+Docs: Seccomp security profiles
+https://docs.docker.com/engine/security/seccomp/
+
+Docs: AppArmor profiles
+https://docs.docker.com/engine/security/apparmor/
+
+
+
+Docs: Rootless mode
+https://github.com/docker/engine/blob/v19.03.0-rc3/docs/rootless.md
+
+Docker Blog: Experimenting with Rootless Docker
+https://www.docker.com/blog/experimenting-with-rootless-docker/
+
+YouTube Video on Rootless Mode from DockerCon 2019
+https://www.youtube.com/watch?v=Qq78zfXUq18
+
+Rootless Mode Install Script
+https://get.docker.com/rootless
+
+
+
+GitHub: Google's "Distroless" Repo
+https://github.com/GoogleContainerTools/distroless
+
+
+

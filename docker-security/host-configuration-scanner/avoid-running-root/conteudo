@@ -1,10 +1,22 @@
 # Using USER in Dockerfiles to Avoid Running
 
 
-
+Vídeo teórico.
 
 Sample Dockerfile of using USER in a Node.js App
 https://github.com/BretFisher/dockercon19/blob/master/1.Dockerfile
 
 Docs: USER Stanza in Dockerfiles
 https://docs.docker.com/engine/reference/builder/#user
+
+
+# comandos
+systemctl start docker
+docker ps  // pode não ter nada
+docker run -d nginx
+
+/*
+Mostra se o processo está sendo executado como master, worker e etc.
+Não sei o que é o "b8a", talvez algo que tenho que instalar igual no kubernetes
+*/
+docker top b8a

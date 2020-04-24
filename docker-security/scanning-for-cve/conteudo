@@ -1,0 +1,17 @@
+# Code Repo and Image Scanning for CVE's
+
+CVE Database
+https://cve.mitre.org/
+
+Snyk, one of the ways to scan your Git repos and Images
+https://snyk.io/
+
+What Is Shift Left Security?
+https://www.twistlock.com/resources/shift-left-security/
+
+Aqua MicroScanner, to scan your images during docker build
+https://github.com/aquasecurity/microscanner
+
+Aqua Trivy, to scan your images after their built
+https://github.com/aquasecurity/trivy
+

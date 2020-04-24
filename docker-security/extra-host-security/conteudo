@@ -1,0 +1,9 @@
+# Docker User Namespaces for Extra Host Security
+
+
+More Info on User Namespaces
+https://integratedcode.us/2015/10/13/user-namespaces-have-arrived-in-docker/
+
+Docs: How to Use User Namespaces
+https://docs.docker.com/engine/security/userns-remap/
+
