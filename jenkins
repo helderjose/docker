@@ -1,3 +1,11 @@
+Curso devops Udemy
+docker container ls -a
+docker container start <CONTAINER ID> olhe o id do jenkins (se o conteiner do jenkins não existr use run no lugar do start)
+http://localhost:8080
+user: admin
+pass: password
+--------------------------------------------------
+
 
 Instalation:
 https://hub.docker.com/r/jenkins/jenkins
@@ -11,6 +19,9 @@ http://localhost:8080
 
 Primeira execução
 docker container run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+
+No curso usou a 8090
+docker container run -p 8090:8080 -p 50000:50000 jenkins/jenkins:lts
 
 Copie o hash gerado no terminal
 http://localhost:8080 -> cole o hash no campo
