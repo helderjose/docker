@@ -1,0 +1,16 @@
+# Three Management Approaches
+
+Vídeo teórico.
+
+Kubernetes Management Techniques (docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/
+
+Imperative Command Examples (docs tutorial)
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-command/
+
+Imperative Config Files (doc tutorials)
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-config/
+
+Declarative Config Files
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/
+

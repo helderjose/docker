@@ -1,0 +1,56 @@
+# Kubernetes Local Install
+
+Minikube Download
+https://github.com/kubernetes/minikube/releases/
+
+MikroK8s for Linux Hosts
+https://github.com/ubuntu/microk8s
+
+Install kubectl on Windows when you don't have Docker Desktop
+https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows
+
+Katacoda Kubernetes in a Browser
+https://www.katacoda.com/courses/kubernetes/playground
+
+Play-with-K8s in a Browser
+https://play-with-k8s.com/
+
+
+# Instalação MikroK8s Fedora
+https://snapcraft.io/install/microk8s/fedora
+sudo dnf install snapd
+sudo ln -s /var/lib/snapd/snap /snap
+
+sudo snap install microk8s --classic ou acesse https://microk8s.io/#get-started
+alias kubectl=microk8s.kubectl
+sudo usermod -a -G microk8s <PC_USER_NAME>  // reiniciar a máquina
+groups // na home para ver os grupos que o usuário faz parte
+
+microk8s.kubectl
+microk8s.enable dns
+kubectl version
+
+
+Erros e soluções:
+too early for operation, device not yet seeded or device model not acknowledged.
+Esperei um pouco e executei de novo.
+
+
+
+http://play-with-k8s.com
+
+katacoda.com
+
+### minikube
+
+minikube-installer.exe
+
+minikube start
+
+### microk8s
+
+microk8s.kubectl
+
+microk8s.enable dns
+
+alias kubectl=microk8s.kubectl

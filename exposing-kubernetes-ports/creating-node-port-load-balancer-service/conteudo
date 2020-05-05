@@ -1,0 +1,19 @@
+# Creating a NodePort and LoadBalancer Service
+
+# comandos
+kubectl get all
+// na coluna type vai aparecer o novov NodePort, o default é ClusterIP
+kubectl expose deployment/httpenv --port 8888 --name httpenv-np --type NodePort
+kubectl get services
+curl localhost:31961  // o número é pego na saída do comando anterior
+
+// Add a LoadBalancer Service
+kubectl expose deployment/httpenv --port 8888 --name httpenv-lb --type LoadBalancer
+kubectl get services
+curl localhost:8888 // mac ou windows
+curl localhost:30119  // 30119 foi pego na coluna PORTs
+
+// deletando os services usado no exemplo
+kubectl delete service/httpenv service/httpenv-np
+kubectl delete service/httpenv-lb deployment/httpenv
+

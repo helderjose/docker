@@ -1,0 +1,20 @@
+# Using Secrets with Swarm Stacks
+
+Secrets In Compose Files (Docker Docs)
+https://docs.docker.com/compose/compose-file/#secrets-configuration-reference
+
+
+
+Crie as docker-machine node1, node2, node3.
+Coloque as três para trabalharem junto, compartilhe a pasta secrets-sample-2
+com a node1 (olhar a aula anterior para fazer esses passos)
+
+node1:
+vim docker-compose.yml
+docker stack deploy -c docker-compose.yml mydb
+docker secret ls
+docker stack rm mydb
+
+
+
+

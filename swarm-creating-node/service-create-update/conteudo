@@ -1,0 +1,19 @@
+Essa aula só tem esse arquivo.
+
+
+
+UI Change For Service Create/Update
+You may notice that when using docker service create  and update , that the CLI acts differently for some Lectures then your own Docker. This is due to a change in the way Docker CLI shows the service commands in 2017.
+
+--detach is a new option that changes the CLI response after you run a command.
+This is a good thing, and doesn't affect the functionality of Swarm. It's just a UI difference. I use various 2017 versions of Docker in this course, so you may see different output for your own service create/update commands vs. mine, which is fine.
+
+History of changes to CLI output for service create/update:
+
+Before 17.05, the service commands would immediately return to your shell prompt and the containers would be scheduled in the background (asynchronously). To check if they deployed properly you would need to use docker service ls and docker service ps.
+Starting in 17.05 the service commands were given a --detach  option, which defaulted to true , but warned you each time about a future change to false . The create/update commands were still asynchronous.
+Starting in 17.10 the --detach  default changes to false , so you'll always see the UI wait synchronously while service tasks are deployed/updated, unless you set --detach true  in each command.
+For all stable versions after 17.12, just remember:
+
+Use the defaults if you're interactive at the CLI, typing commands yourself.
+Use --detach true  if you're using automation or shell scripts to get things done.

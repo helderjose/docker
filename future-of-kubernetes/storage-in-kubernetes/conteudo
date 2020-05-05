@@ -1,0 +1,15 @@
+# Storage in Kubernetes
+
+Vídeo teórico.
+
+Volumes (Docs)
+https://kubernetes.io/docs/concepts/storage/volumes/
+
+StatefulSets (Docs)
+https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
+
+PersistentVolume (Docs)
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
+
+
+

@@ -1,0 +1,17 @@
+# Kubernetes Services DNS
+
+O vídeo teórico é interessante.
+
+Kubernetes DNS Specification
+https://github.com/kubernetes/dns/blob/master/docs/specification.md
+
+CoreDNS for Kubernetes
+https://www.coredns.io/plugins/kubernetes/
+
+
+# comandos
+systemctl start docker
+kubectl get namespaces
+
+curl <hostname>
+curl <hostname>.<namespace>.svc.cluster.local

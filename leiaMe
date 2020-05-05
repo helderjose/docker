@@ -40,3 +40,375 @@ https://docs.docker.com/compose/compose-file/#links
 https://docs.docker.com/compose/compose-file/#build
 
 
+
+
+
+
+Docker 1.12 Swarm Mode Deep Dive Part 1: Topology (YouTube)
+https://www.youtube.com/watch?v=dooPhkXT9yI
+
+Docker 1.12 Swarm Mode Deep Dive Part 2: Orchestration (YouTube)
+https://www.youtube.com/watch?v=_F6PSP-qhdA
+
+Heart of the SwarmKit: Topology Management (slides)
+https://speakerdeck.com/aluzzardi/heart-of-the-swarmkit-topology-management
+
+Heart of the SwarmKit: Store, Topology & Object Model (YouTube)
+https://www.youtube.com/watch?v=EmePhjGnCXY
+
+Raft Consensus Visualization (Our Swarm DB and how it stays in sync across nodes)
+http://thesecretlivesofdata.com/raft/
+
+
+
+
+Create and Upload a SSH Key to Digital Ocean
+https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/
+
+Docker Swarm Firewall Ports
+https://www.bretfisher.com/docker-swarm-firewall-ports/
+
+Configure SSH for Saving Options for Specific Connections
+https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client
+
+Windows Hyper-V driver for docker-machine
+https://docs.docker.com/machine/drivers/hyper-v/
+
+DigitalOcean Coupon for $50 (new signups)
+https://www.digitalocean.com/?refcode=ee97875d52fa&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=CopyPaste
+
+
+
+Features Not Supported In Stack Deploy
+https://docs.docker.com/compose/compose-file/#not-supported-for-docker-stack-deploy
+
+Production Servers: Compose vs. Swarm
+https://github.com/BretFisher/ama/issues/8
+
+
+
+Manage sensitive data with Docker secrets (Docker Docs) (Lots of good reading and examples)
+https://docs.docker.com/engine/swarm/secrets/
+
+
+
+Secrets In Compose Files (Docker Docs)
+https://docs.docker.com/compose/compose-file/#secrets-configuration-reference
+
+
+
+Service Update command (Docker Docs)
+https://docs.docker.com/engine/reference/commandline/service_update/
+
+
+
+PHP Laravel Good Defaults with Docker
+https://github.com/BretFisher/php-docker-good-defaults
+
+HEALTHCHECK in Dockerfile (Docker Docs)
+https://docs.docker.com/engine/reference/builder/#healthcheck
+
+Healthcheck in Compose files (Docker Docs)
+https://docs.docker.com/compose/compose-file/#healthcheck
+
+
+
+# Kubernetes
+History of Kubernetes
+https://en.wikipedia.org/wiki/Kubernetes
+
+Kubernetes Home Page
+https://kubernetes.io/
+
+
+List of Certified Kubernetes Distributions
+https://kubernetes.io/partners/#conformance
+
+
+Kubernetes Components
+https://kubernetes.io/docs/concepts/overview/components/#master-components
+
+
+
+Minikube Download
+https://github.com/kubernetes/minikube/releases/
+
+MikroK8s for Linux Hosts
+https://github.com/ubuntu/microk8s
+
+Install kubectl on Windows when you don't have Docker Desktop
+https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows
+
+Katacoda Kubernetes in a Browser
+https://www.katacoda.com/courses/kubernetes/playground
+
+Play-with-K8s in a Browser
+https://play-with-k8s.com/
+
+
+
+Pod Overview (docs)
+https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
+
+Service (docs)
+https://kubernetes.io/docs/concepts/services-networking/service/
+
+Namespace (docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+
+
+
+Kubectl Cheat Sheet
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+Kubectl for Docker Users
+https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
+
+
+
+Stern: for better multi-node log viewing at the CLI
+https://github.com/wercker/stern
+
+
+
+Service (docs)
+https://kubernetes.io/docs/concepts/services-networking/service/
+
+Service Types (docs tutorial)
+https://kubernetes.io/docs/tutorials/services/
+
+
+
+Kubernetes DNS Specification
+https://github.com/kubernetes/dns/blob/master/docs/specification.md
+
+CoreDNS for Kubernetes
+https://www.coredns.io/plugins/kubernetes/
+
+
+
+kubectl Usage Conventions (docs)
+https://kubernetes.io/docs/reference/kubectl/conventions/
+
+Kubectl Usage Best Practices (docs)
+https://kubernetes.io/docs/reference/kubectl/conventions/#best-practices
+
+
+
+Kubernetes Management Techniques (docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/
+
+Imperative Command Examples (docs tutorial)
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-command/
+
+Imperative Config Files (doc tutorials)
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-config/
+
+Declarative Config Files
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/
+
+
+Declarative Management of Kubernetes (Docs)
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/
+
+
+
+Kubernetes API Reference (Docs)
+https://kubernetes.io/docs/reference/#api-reference
+
+
+APIServer dry-run and kubectl diff
+https://kubernetes.io/blog/2019/01/14/apiserver-dry-run-and-kubectl-diff/
+
+
+
+
+Label Selectors (Docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
+
+Difference Between Labels and Annotations
+https://vsupalov.com/kubernetes-labels-annotations-difference/
+
+Recommended Labels (Docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
+
+Assigning Pods to Nodes (Docs)
+https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+
+Taints and Tolerations (Docs)
+https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
+
+
+
+Volumes (Docs)
+https://kubernetes.io/docs/concepts/storage/volumes/
+
+StatefulSets (Docs)
+https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
+
+PersistentVolume (Docs)
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
+
+
+
+Ingress (Docs)
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+Ingress Controllers (Docs)
+https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
+
+Set up Ingress on Minikube with the NGINX Ingress Controller (Docs)
+https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+
+Traefik Ingress
+https://docs.traefik.io/v2.0/providers/kubernetes-crd/#traefik-ingressroute-definition
+
+
+
+Custom Resources (Docs)
+https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
+
+The Operator Pattern (Docs)
+https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
+
+OperatorHub
+https://operatorhub.io/
+
+Awesome Operators List
+https://github.com/operator-framework/awesome-operators
+
+
+
+Spreadsheet of Kubernetes Deployment Tools
+https://docs.google.com/spreadsheets/d/1FCgqz1Ci7_VCz_wdh8vBitZ3giBtac_H8SBw4uxnrsE/edit#gid=0
+
+Deploying Compose on Kubernetes
+https://github.com/docker/compose-on-kubernetes/tree/master/docs
+
+Introducing Kustomize
+https://kubernetes.io/blog/2018/05/29/introducing-kustomize-template-free-configuration-customization-for-kubernetes/
+
+Kustomize (GitHub)
+https://github.com/kubernetes-sigs/kustomize
+
+Docker App (GitHub)
+https://github.com/docker/app
+
+CNAB spec
+https://cnab.io/
+
+
+
+The Kubernetes Dashboard
+https://github.com/kubernetes/dashboard
+
+
+
+Configure Access to Multiple Clusters (Docs)
+https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
+
+Namespaces (Docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+
+
+
+Kubernetes Release Notes
+https://kubernetes.io/docs/setup/release/notes/
+
+
+
+My list of security objectives for Docker projects
+https://github.com/BretFisher/ama/issues/17
+
+
+
+Docker Engine Security
+https://docs.docker.com/engine/security/security/
+
+Big List of Docker Security Tools
+https://sysdig.com/blog/20-docker-security-tools/
+
+
+
+Docs: Seccomp security profiles
+https://docs.docker.com/engine/security/seccomp/
+
+Docs: AppArmor security profiles
+https://docs.docker.com/engine/security/apparmor/
+
+
+
+Docker Bench
+https://github.com/docker/docker-bench-security
+
+CIS Benchmark for Securing Docker
+https://www.cisecurity.org/benchmark/docker/
+
+
+
+Sample Dockerfile of using USER in a Node.js App
+https://github.com/BretFisher/dockercon19/blob/master/1.Dockerfile
+
+Docs: USER Stanza in Dockerfiles
+https://docs.docker.com/engine/reference/builder/#user
+
+
+
+More Info on User Namespaces
+https://integratedcode.us/2015/10/13/user-namespaces-have-arrived-in-docker/
+
+Docs: How to Use User Namespaces
+https://docs.docker.com/engine/security/userns-remap/
+
+
+
+CVE Database
+https://cve.mitre.org/
+
+Snyk, one of the ways to scan your Git repos and Images
+https://snyk.io/
+
+What Is Shift Left Security?
+https://www.twistlock.com/resources/shift-left-security/
+
+Aqua MicroScanner, to scan your images during docker build
+https://github.com/aquasecurity/microscanner
+
+Aqua Trivy, to scan your images after their built
+https://github.com/aquasecurity/trivy
+
+
+
+Sysdig Falco
+https://sysdig.com/opensource/falco/
+
+Docker Content Trust
+https://docs.docker.com/engine/security/trust/content_trust/
+
+Docs: Seccomp security profiles
+https://docs.docker.com/engine/security/seccomp/
+
+Docs: AppArmor profiles
+https://docs.docker.com/engine/security/apparmor/
+
+
+
+Docs: Rootless mode
+https://github.com/docker/engine/blob/v19.03.0-rc3/docs/rootless.md
+
+Docker Blog: Experimenting with Rootless Docker
+https://www.docker.com/blog/experimenting-with-rootless-docker/
+
+YouTube Video on Rootless Mode from DockerCon 2019
+https://www.youtube.com/watch?v=Qq78zfXUq18
+
+Rootless Mode Install Script
+https://get.docker.com/rootless
+
+
+
+GitHub: Google's "Distroless" Repo
+https://github.com/GoogleContainerTools/distroless
+
+
+

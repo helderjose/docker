@@ -1,0 +1,8 @@
+# What are Distroless Images?
+
+GitHub: Google's "Distroless" Repo
+https://github.com/GoogleContainerTools/distroless
+
+
+Fala sobre imagens que não usa uma distro linux, essas
+imagens não usam um gerenciamento de pacotes como dnf, yum e etc.

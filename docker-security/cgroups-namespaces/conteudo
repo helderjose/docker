@@ -1,0 +1,10 @@
+# Docker Cgroups and Namespaces
+
+Teoria sobre Cgroups e namespaces.
+
+
+Docker Engine Security
+https://docs.docker.com/engine/security/security/
+
+Big List of Docker Security Tools
+https://sysdig.com/blog/20-docker-security-tools/

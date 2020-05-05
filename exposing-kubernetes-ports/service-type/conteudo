@@ -1,0 +1,12 @@
+# Service Types
+
+Essa aula é teórica (assistir ao vídeo).
+
+Service (docs)
+https://kubernetes.io/docs/concepts/services-networking/service/
+
+Service Types (docs tutorial)
+https://kubernetes.io/docs/tutorials/services/
+
+
+kubectl expose  // creates a service for existing pods

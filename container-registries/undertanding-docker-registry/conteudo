@@ -1,0 +1,18 @@
+# Understanding Docker Registry
+
+Teoria.
+
+
+https://github.com/docker/distribution
+https://hub.docker.com/registry
+
+Registry Configuration Docs
+https://docs.docker.com/registry/configuration/
+
+Registry Garbage Collection
+https://docs.docker.com/registry/garbage-collection/
+
+Use Registry As A "Mirror" of Docker Hub
+https://docs.docker.com/registry/recipes/mirror/
+
+

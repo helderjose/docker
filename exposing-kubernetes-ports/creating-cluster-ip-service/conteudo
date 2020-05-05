@@ -1,0 +1,19 @@
+# Creating a ClusterIP Service
+
+Using Services (docs tutorial)
+https://kubernetes.io/docs/tutorials/kubernetes-basics/expose/expose-intro/
+
+
+
+# comandos
+kubectl get pods -w  // vai vai ter nada por enquanto
+// abra outro terminal
+kubectl create deployment httpenv --image=bretfisher/httpenv  // a simple http server using sample code
+kubectl scale deployment/httpenv --replicas=5  // cria 5 réplicas
+kubectl expose deployment/httpenv --port 8888
+kubectl get service // look up what IP was allocated
+kubectl run --generator run-pod/v1 tmp-shell --rm -it --image bretfisher/netshoot -- bash  // libera um terminal no pod eu acho
+curl httpenv:8888
+curl [ip of service]:8888  // if you're in Linux host
+kubectl get service
+

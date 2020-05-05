@@ -1,0 +1,18 @@
+# Kubernetes Configuration YAML
+
+Apenas falou sobre os arquivos, no próximo exemplo começa a criar.
+
+Understanding Kubernetes Objects and Spec's (Docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/
+
+Arquivos .yml
+
+pod.yml
+Exemplo de um kind: pod.
+
+deployment.yml
+Exemplo de um kind: deployment
+
+app.yml
+Tem um kind: service e um kind: deployment no mesmo arquivo.
+Perceba que são separados por "---" (três traços).

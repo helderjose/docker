@@ -1,0 +1,27 @@
+# Our First Pod With Kubectl run
+
+
+Fiz a instalação do MikroK8s, olhar a pasta "kubernetes-local-install"
+
+Kubectl Cheat Sheet
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+Kubectl for Docker Users
+https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
+
+
+
+# Comandos
+
+kubectl version
+kubectl run my-nginx --image nginx
+kubectl get pods  // lista os pods
+kubectl get all  //  lista os services, pods e etc
+kubectl delete deployment my-nginx
+kubectl get all  // vai ter apenas uma linha do service
+
+
+
+
+
+

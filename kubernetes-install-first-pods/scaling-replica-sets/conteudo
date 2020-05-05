@@ -1,0 +1,14 @@
+# Scaling ReplicaSets
+
+
+# Comandos
+kubectl run my-apache --image httpd  // start a new deployment for one replica/pod
+kubectl get all
+
+// esses dois comando são iguais
+kubectl scale deploy/my-apache --replicas 2  // let's scale it up with another pod
+kubectl scale deployment my-apache --replicas 2
+
+kubectl get all
+kubectl delete deployment my-apache
+kubectl get all  // vai ter apenas uma linha do service

@@ -1,0 +1,36 @@
+# Using Docker Registry With Swarm
+
+
+Comandos
+http://play-with-docker.com
+
+ícone chave de boca -> "5 managers and no workers"
+
+manager1:
+docker node ls
+docker service create --name registry --publish 5000:5000 registry
+docker service ps registry
+
+clique no link do número da porta para abrir a página
+url dos exemplos:
+http://ip172-18-0-59-bpp0umfnctv00081v9ig-5000.direct.labs.play-with-docker.com/
+http://ip172-18-0-59-bpp0umfnctv00081v9ig-5000.direct.labs.play-with-docker.com/v2/_catalog
+
+docker pull hello-world
+docker tag hello-world 127.0.0.1:5000/hello-world
+docker push 127.0.0.1:5000/hello-world
+
+http://ip172-18-0-59-bpp0umfnctv00081v9ig-5000.direct.labs.play-with-docker.com/v2/_catalog
+
+docker pull nginx
+docker tag nginx 127.0.0.1:5000/nginx
+docker push 127.0.0.1:5000/nginx
+
+http://ip172-18-0-59-bpp0umfnctv00081v9ig-5000.direct.labs.play-with-docker.com/v2/_catalog
+
+docker service create --name nginx -p 80:80 --replicas 5 --detach=false 127.0.0.1:5000/nginx
+
+// vai aparecer mais uma porta disponível para clicar
+http://ip172-18-0-59-bpp0umfnctv00081v9ig-80.direct.labs.play-with-docker.com/
+
+docker service ps nginx

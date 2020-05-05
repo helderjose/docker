@@ -1,0 +1,29 @@
+# Run, Expose and Create Generators
+
+
+kubectl Usage Conventions (docs)
+https://kubernetes.io/docs/reference/kubectl/conventions/
+
+# Comandos
+
+## create deployment
+kubectl create deployment test --image nginx --dry-run
+kubectl create deployment test --image nginx --dry-run -o yaml  // vai retornar o yaml file
+
+## create job
+kubectl create job test --image nginx --dry-run -o yaml
+
+## expose
+/*
+  Nesse ponto, vai retornar um erro porque ainda não criamos deployments.app/test,
+  continuar executanto os comandos, pois será criado o deployment e esse comando
+  será executado novamente.
+*/
+kubectl expose deployment/test --port 80 --dry-run -o yaml
+kubectl create deployment test --image nginx  // cria o deployments.app/test
+kubectl expose deployment/test --port 80 --dry-run -o yaml
+kubectl delete deployment test  // deleta o deployments.app/test
+
+
+
+

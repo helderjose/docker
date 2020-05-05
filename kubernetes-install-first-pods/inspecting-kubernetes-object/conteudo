@@ -1,0 +1,27 @@
+# Inspecting Kubernetes Objects
+
+Stern: for better multi-node log viewing at the CLI
+https://github.com/wercker/stern
+
+
+
+# Comandos
+systemctl start docker
+kubectl run my-apache --image httpd
+kubectl scale deployment my-apache --replicas 2
+kubectl get pods
+kubectl logs deployment/my-apache
+kubectl logs deployment/my-apache --follow
+kubectl logs deployment/my-apache --follow --tail 1
+kubectl logs -l run=my-apache
+kubectl get pods
+
+// kubectl describe pod/my-apache-<pod id>
+ex: kubectl describe pod/my-apache-5d589d69c7-c8jzv
+kubectl get pods -w  // -w é similar ao comando watch do Linux
+//abra outra aba no terminal
+// kubectl delete pod/my-apache-<pod id>
+ex: kubectl delete pod/my-apache-5d589d69c7-c8jzv
+kubectl get pods  // aparecerá dois pods, mas com id diferente do que foi deletado, porque quando deleta o kubernetes já faz start de outro
+kubectl delete deployment my-apache  // apaga os pods
+

@@ -1,3 +1,5 @@
+Apenas esses links e teoria no vídeo.
+
 Docker 1.12 Swarm Mode Deep Dive Part 1: Topology (YouTube)
 https://www.youtube.com/watch?v=dooPhkXT9yI
 
@@ -14,5 +16,3 @@ Raft Consensus Visualization (Our Swarm DB and how it stays in sync across nodes
 http://thesecretlivesofdata.com/raft/
 
 
-comandos
-...docker/material-curso/Docker-Mastery-Commands/DM S07 Commands.txt

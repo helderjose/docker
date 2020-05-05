@@ -1,0 +1,45 @@
+Deploy services to a swarm (Docker Docs)
+https://docs.docker.com/engine/swarm/services/
+
+
+docker info    // procure a linha "Swarm: inactive"
+docker swarm init
+docker node ls
+docker node --help
+docker swarm --help
+docker service --help
+
+
+docker service create alpine ping 8.8.8.8   //vai gerar um hash   // 8.8.8.8 is google dns
+docker service ls
+
+docker service ps <NAME or ID>  frosty_newton era o nome do service do curso
+docker service ps intelligent_noyce   // intelligent_noyce era o nome do meu service
+docker container ls
+
+docker service update <ID or NAME> --replicas 3  // docker service update TAB COMPLETION --replicas 3
+docker service update 2nqssbacvzqj --replicas 3
+docker service ls   // repare que a coluna REPLICAS vai estar 3/3
+docker service ps 2nqssbacvzqj   // repare que vai ter três linhas na tabela
+docker update --help
+docker service update --help
+
+
+docker container ls
+docker container rm -f <name>.1.<ID>   // na coluna NAMES   // docker container rm -f frosty_newton.1.TAB COMPLETION
+docker container rm -f <CONTAINER ID> && docker service ls  // vai ter 2/3 na coluna REPLICAS
+docker service ls // depois de alguns segundos vai ter 3/3 na coluna REPLICAS, o docker inicia novamente o container baixado
+
+docker service ps intelligent_noyce  // intelligent_noyce é o nome do meu docker service. Vai exibir um histórico do service.
+docker service rm intelligent_noyce
+docker service ls  // não vai ter nenhum service
+docker container ls  // não vai ter nehum container intelligent_noyce
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+# Labels and Label Selectors
+
+Vídeo teórico.
+
+Label Selectors (Docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
+
+Difference Between Labels and Annotations
+https://vsupalov.com/kubernetes-labels-annotations-difference/
+
+Recommended Labels (Docs)
+https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/
+
+Assigning Pods to Nodes (Docs)
+https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+
+Taints and Tolerations (Docs)
+https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/

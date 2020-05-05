@@ -1,0 +1,23 @@
+# Dry Runs and Diff's
+
+APIServer dry-run and kubectl diff
+https://kubernetes.io/blog/2019/01/14/apiserver-dry-run-and-kubectl-diff/
+
+
+# Comandos
+systemctl start docker
+cd dry-runs-diffs
+
+// dry-run a create (client side only)
+kubectl apply -f app.yml --dry-run  // o arquivo app.yml já deve existir
+
+// dry-run a create/update on server
+kubectl apply -f app.yml --server-dry-run
+
+kubectl apply -f app.yml
+
+kubectl apply -f app.yml --server-dry-run
+
+// é como o diff do git
+kubectl diff -f app.yml
+

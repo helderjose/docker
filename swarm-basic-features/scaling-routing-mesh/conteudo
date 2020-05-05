@@ -1,0 +1,22 @@
+https://docs.docker.com/engine/swarm/ingress/
+
+
+https://labs.play-with-docker.com/
+
+fiz no meu pc mesmo.
+node1:
+docker service create --name search --replicas 3 -p 9200:9200 elasticsearch:2
+docker service ps search
+
+o meu ficou travado aqui, mas retorna um json com informações do cluster,
+se chamar várias vezes, vai mudar o metadado "name", o load balancer
+gerencia qual server chamar
+curl localhost:9200
+
+Tive que usar o ip da vlan para resolver o travamento
+ifconfig // listar as placas para pegar o ip
+curl 192.168.122.1:9200 // chamei várias vezez, o load balance decide qual server chamar, olhar o "name".
+
+
+docker service ls
+docker service rm SERVICE_ID
