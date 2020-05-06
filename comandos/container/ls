@@ -1,0 +1,8 @@
+ls - List containers running
+
+docker container ls --help
+docker container ls   // lista os containers em execução
+docker container ls -a  // Show all containers (default shows just running)
+
+
+ls tem vários outros parâmetros.

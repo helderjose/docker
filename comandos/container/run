@@ -1,5 +1,7 @@
-docker run --help
+docker container run --help
+
 Run a command in a new container
+obs: tem vários outros parâmetros além dos listados aqui.
 
 
 -p

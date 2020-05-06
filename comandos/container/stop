@@ -1,4 +1,8 @@
 Stop one or more running containers
+
+docker container stop --help
+
+
 docker container ls
 docker container stop <CONTAINER ID>
 
