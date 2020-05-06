@@ -1,0 +1,5 @@
+Remove um container. Apaga um container
+
+docker container rm -f <conatiner-id>
+
+-f remove um container mesmo se estiver em execução.

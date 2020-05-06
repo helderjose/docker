@@ -16,7 +16,7 @@ acesse: localhost:80 ou localhost
 Explicação:
 docker run --publish 80:80 nginx
 + Downloaded image 'nginx' from Docker Hub
-+ Starte a new container from that image
++ Start a new container from that image
 + Opened port 80 on the host IP
 + Routes that traffic to the container IP, port 80
     Note you'll get a 'bind' error if the left number [host port] is being used by anything else, even another container.

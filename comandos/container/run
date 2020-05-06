@@ -7,10 +7,14 @@ obs: tem vários outros parâmetros além dos listados aqui.
 -p
 --publish list
 Publish a container's port(s) to the host
+docker container run -p hostPort:containerPort nginx
 
 docker container run --publish 80:80 nginx
 docker container run -p 80:80 nginx
 http://localhost/ ou http://localhost:80
+
+docker container run -p 8090:80 nginx
+http://localhost:8090
 
 
 -d

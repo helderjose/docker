@@ -1,0 +1,10 @@
+Tem vários outros parâmetros além dos mostrados aqui.
+
+Show log for a specific container.
+
+docker container logs --help
+docker container logs <container-id | container-name>
+
+
+-f, --follow         Follow log output
+docker container logs -f <container-id | container-name>
