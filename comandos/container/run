@@ -29,3 +29,11 @@ Assign a name to the container
 
 docker container run --publish 80:80 --detach --name webhost nginx
 Inicia a image do nginx com o nome "webhost"
+
+-e
+environment - variável de ambiente
+docker container rm -f nginx-teste
+docker container run -p 80:80 -d --name nginx-teste -e MY_VAR="hello world" nginx
+docker container exec -it nginx-teste bash
+echo $MY_VAR   // hello world
+

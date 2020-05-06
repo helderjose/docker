@@ -1,0 +1,13 @@
+https://hub.docker.com/_/mysql
+
+// iniciar o container mysql com o password gerado de forma aleatórea.
+docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+docker container logs db
+Procure pela linha "GENERATED ROOT PASSWORD", caso não apareça, espere um pouco e execute o comando de novo.
+
+
+
+docker container run -d -p 3306:3306 --name db -e MYSQL_ROOT_PASSWORD=123123 mysql
+docker container exec -it db bash
+echo $MYSQL_ROOT_PASSWORD   // 123123
+docker container logs db
