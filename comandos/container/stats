@@ -1,0 +1,7 @@
+show live performance data for all containers (CPU %, mem usage / limit, mem %, net i/o, block i/o, pids)
+Display a live stream of container(s) resource usage statistics
+
+docker container stats --help
+
+docker container run -d --name nginx-teste nginx
+docker container stats

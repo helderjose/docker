@@ -3,3 +3,7 @@ Exibe os processo que estão sendo executados dentro do container.
 Usage:	docker container top CONTAINER [ps OPTIONS]
 
 docker container top <container> [ps OPTIONS]
+
+
+docker container run -d --name nginx-teste nginx
+docker container top nginx-teste

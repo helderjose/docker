@@ -1,0 +1,11 @@
+https://hub.docker.com/_/ubuntu
+
+Acho que é ubuntu server.
+Posso usar os comandos como apt-get e etc.
+
+/*
+-it
+  default cmd is bash, so we don't have to specify it to -it param.
+*/
+docker container run -it --name ubuntu ubuntu
+docker container start -ai ubuntu   // se o container já existir

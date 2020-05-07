@@ -1,2 +1,27 @@
+Run additional process in running container
+Usage:	docker container exec [OPTIONS] CONTAINER COMMAND [ARG...]
+Run a command in a running container
+
+
+Obs: O help tem várias outras opções além das mostradas aqui.
+
+
+docker container exec --help
+
+// acessar o terminal do container em execução.
+docker container start <container-name>
 docker container exec -it <container-name> bash
 
+
+
+-e, --env list             Set environment variables
+Criar variável de ambiente em um container.
+
+
+
+-w, --workdir string       Working directory inside the container
+Adicionar pasta no container.
+
+
+----------------------
+acessar o terminal do container

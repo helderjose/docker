@@ -37,3 +37,17 @@ docker container run -p 80:80 -d --name nginx-teste -e MY_VAR="hello world" ngin
 docker container exec -it nginx-teste bash
 echo $MY_VAR   // hello world
 
+
+-it
+/*
+  -i --interactive
+    Keep STDIN open even if not attached
+    keep session open to receive terminal input
+  -t --tty   Allocate a pseudo-TTY   (pseudo-tty)
+    simulates a real terminal, like what ssh does
+    bash (shell)
+    if run with -it, it will give you a terminal inside the running container
+
+  acessar o terminal do container
+*/
+docker container run -it --name nginx-teste nginx bash

@@ -1,0 +1,8 @@
+Start one or more stopped containers
+
+docker container start --help
+
+-a --attach  // Attach STDOUT/STDERR and forward signals
+-i --interactive  // Attach container's STDIN
+// acessar o terminal do container
+docker container start -ai <container-name>   // quando sair do container ele será parado.

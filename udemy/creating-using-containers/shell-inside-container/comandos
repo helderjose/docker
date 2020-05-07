@@ -2,7 +2,7 @@ docker container run --help
 
 
 docker container run -it --name proxy nginx bash
-o comando acime inicia um container do nginx com nome proxy e abre um terminal nele.
+o comando acima inicia um container do nginx com nome proxy e abre um terminal nele.
 após executar esse comando, você estará em um terminal no container.
 ls -la
 exit  //quando sai do terminal o conteiner é parado
