@@ -4,6 +4,7 @@
 1. multiple-containers
 1. acontecendo-container - top, inspect, stats
 1. shell-inside-container - acessar o terminal do container (bash, sh)
+1. network
 
 
 estou nesse
