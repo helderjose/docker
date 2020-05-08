@@ -45,7 +45,7 @@ ex: docker network connect 5b4632787fa0 66e065615d41  // os ids foram conseguido
 
 docker container ls
 docker container inspect <id do container webhost>
-Oberse que neste momento tem duas networks no json. (acho que é como se colocasse uma nova placa de rede em um pc)
+Observe que neste momento tem duas networks no json. (acho que é como se colocasse uma nova placa de rede em um pc)
 
 docker network disconnect <id do my_app_net> <id do container do webhost (nginx)>
 docker network disconnect 5b4632787fa0 66e065615d41

@@ -1,0 +1,4 @@
+docker container run -p 80:80 --name nginx-teste -d nginx
+docker container port nginx-teste
+
+

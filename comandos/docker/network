@@ -1,0 +1,66 @@
+docker network --help
+
+
+Manage networks
+
+Commands:
+  connect     Connect a container to a network
+  create      Create a network
+  disconnect  Disconnect a container from a network
+  inspect     Display detailed information on one or more networks
+  ls          List networks
+  prune       Remove all unused networks
+  rm          Remove one or more networks
+
+
+# inspect
+docker network ls
+docker network inspect bridge
+
+# create
+docker network create --help
+docker network create network_teste
+
+
+docker container run -d --name nginx-teste --network network_teste nginx:alpine   //o nginx:alpine já tem o comando ping.
+docker network inspect network_teste  // o container nginx-teste vai estar listado aqui
+
+
+# connect
+docker network connect <network-id> <container-id>  ou
+docker network connect <network-name> <container-name>
+
+docker container run -d --name nginx-teste-b nginx:alpine
+docker network connect fdef031b5aff6a450 2a1e0b63ab3386f9e8    // os ids foram conseguido nos comandos ls
+
+docker container inspect nginx-teste   // tem apenas uma network
+docker network ls
+docker network connect bridge nginx-teste  // adiciona mais uma network ao container
+docker container inspect nginx-teste   // agora tem duas networks
+
+# disconnect -  desconectar o container da network
+docker network disconnect <network-id> <container-id> ou
+docker network disconnect <network-name> <container-name>
+
+docker container inspect nginx-teste    // vai ter duas redes (se fizer todos os passos dos exemplos anteriores)
+docker network disconnect network_teste nginx-teste   // disconecta da network network_teste
+docker container inspect nginx-teste   // vai ter só a network "bridge"
+
+
+
+Tipos de network
+--network bridge
+Default Docker virtual network, which is NAT'ed behind the Host IP.
+
+--network Host
+It gains performance by skipping virtual networks but sacrifies
+security of container model.
+
+--network none
+Removes eth0 and only leaves you with localhost interface in container.
+
+docker network create
+Spawns a new virtual network for you to attach containers to.
+
+network driver
+Built-in or 3rd party extensions that give you virtual network featues.

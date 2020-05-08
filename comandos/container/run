@@ -51,3 +51,9 @@ echo $MY_VAR   // hello world
   acessar o terminal do container
 */
 docker container run -it --name nginx-teste nginx bash
+
+
+
+--network network                Connect a container to a network
+olhar o exemplo: .../docker/comandos/docker/network
+olhar também: docker network create
