@@ -2,7 +2,7 @@ https://hub.docker.com/r/jenkins/jenkins
 
 Curso devops Udemy
 docker container ls -a
-docker container start <CONTAINER ID> olhe o id do jenkins (se o conteiner do jenkins não existr use run no lugar do start)
+docker container start <CONTAINER ID> olhe o id do jenkins (se o container do jenkins não existr use run no lugar do start)
 http://localhost:8080
 user: admin
 pass: password
@@ -29,7 +29,11 @@ Copie o hash gerado no terminal
 http://localhost:8080 -> cole o hash no campo
 
 docker container ls -a
-docker container start <CONTAINER ID> olhe o id do jenkins (se o conteiner do jenkins não existr use run no lugar do start)
+docker container start <CONTAINER ID> olhe o id do jenkins (se o container do jenkins não existr use run no lugar do start)
 
 docker container ls
 docker container stop <CONTAINER ID>
+
+
+
+docker container run -d --name jenkins-pleno -p 8090:8080 -p 50000:50000 -v /opt/jenkins-docker/server-pleno/jenkins_home:/var/jenkins_home  jenkins/jenkins:lts
