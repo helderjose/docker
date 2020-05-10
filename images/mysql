@@ -11,3 +11,9 @@ docker container run -d -p 3306:3306 --name db -e MYSQL_ROOT_PASSWORD=123123 mys
 docker container exec -it db bash
 echo $MYSQL_ROOT_PASSWORD   // 123123
 docker container logs db
+
+
+
+-e
+MYSQL_ROOT_PASSWORD=123123
+MYSQL_ALLOW_EMPTY_PASSWORD=True

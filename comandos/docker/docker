@@ -1,2 +1,5 @@
 docker
 Exibe as opções de comandos docker.
+
+pull
+docker pull nginx

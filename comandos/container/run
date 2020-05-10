@@ -57,3 +57,31 @@ docker container run -it --name nginx-teste nginx bash
 --network network                Connect a container to a network
 olhar o exemplo: .../docker/comandos/docker/network
 olhar também: docker network create
+
+
+
+-v, --volume list                    Bind mount a volume
+docker image inspect mysql   // Procure pelo metadado "volumes"
+docker volume ls
+
+// mysql-db é o nome que demos para o volume (named volume)
+docker container run -d --name mysql-teste -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql
+docker volume ls  // vai aparecer o mysql-db
+
+
+docker image inspect mysql   // Procure pelo metadado "volumes"
+docker container run -d --name mysql-teste -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysql
+docker container ls
+
+docker container inspect mysql-teste
+/*
+Procure pelo metadado "mounts"
+"Source" é no host.
+"destination" é no container.
+*/
+
+docker volume ls
+docker volume inspect TAB COMPLETION
+
+
+-w, --workdir string                 Working directory inside the container

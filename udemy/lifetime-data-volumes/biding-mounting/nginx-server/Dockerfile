@@ -6,6 +6,7 @@ FROM nginx:latest
 WORKDIR /usr/share/nginx/html
 # change working directory to root of nginx webhost
 # using WORKDIR is preferred to using 'RUN cd /some/path'
+# workdir eh no container (eu acho)
 
 COPY index.html index.html
 

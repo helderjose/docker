@@ -1,0 +1,5 @@
+/dados/programacao-2/docker/docker/udemy/lifetime-data-volumes/persistent-data-volumes/comandos
+
+
+docker container run -d --name nginx-teste -p 80:80 -v /opt/nginx-docker/server-test/html:/usr/share/nginx/html nginx
+
