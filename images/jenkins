@@ -36,4 +36,12 @@ docker container stop <CONTAINER ID>
 
 
 
-docker container run -d --name jenkins-pleno -p 8090:8080 -p 50000:50000 -v /opt/jenkins-docker/server-pleno/jenkins_home:/var/jenkins_home  jenkins/jenkins:lts
+docker container run -d --name jenkins-pleno-2 -p 8090:8080 -p 50000:50000 -v /opt/jenkins-docker/server-pleno-2/jenkins_home:/var/jenkins_home  jenkins/jenkins:lts
+
+localhost:8090/safeRestart
+http://localhost:50000/
+
+
+
+plugins
+https://plugins.jenkins.io/git-parameter/
