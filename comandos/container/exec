@@ -18,6 +18,10 @@ docker container exec -it <container-name> bash
 Criar variável de ambiente em um container.
 
 
+-u --user
+usuário do container
+docker exec -it -u root <container-name> /bin/bash
+
 
 -w, --workdir string       Working directory inside the container
 Adicionar pasta no container.
