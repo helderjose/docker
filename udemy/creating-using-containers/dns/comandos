@@ -1,3 +1,5 @@
+# dns
+
 Obs para esse exemplo:
 Anywhere I do a
 docker container run <stuff> nginx , where nginx  is the image you should use,

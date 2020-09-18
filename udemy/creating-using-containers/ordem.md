@@ -6,9 +6,7 @@
 1. shell-inside-container - acessar o terminal do container (bash, sh)
 1. network - cria network (placa de rede)
 1. cli-management-virtual-network - conecta o container em várias networks, remove o container da network e etc
+1. dns
+1. containers-cli-testing
+1. dns-round-robin - alias na network e cria um cluster
 
-
-
-
-estou tirando os números dos nomes e colocando nesse
-arquivo e fazendo exemplos nas pastas "comandos" e "exemplos"

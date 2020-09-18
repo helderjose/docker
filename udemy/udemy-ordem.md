@@ -1,6 +1,6 @@
-1. creating-using-containers     - estou revisando
-1. find-and-build-container-images
-1. lifetime-data-volumes
+1. creating-using-containers
+1. find-and-build-container-images - docker hub, push, pull e et.
+      1. lifetime-data-volumes
 1. docker-componse-multicontainer-tool
 1. swarm-creating-node
 1. swarm-basic-features
