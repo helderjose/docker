@@ -9,6 +9,6 @@ Comandos dessa sessão
 1. biding-mounting - usa uma pasta do host no container
 1. database-upgrade-volumes - Atualiza o postgre 9.6.1 para 9.6.2
 1. edit-code-running - Bind Mounts. Exemplo site estátido com markdown (jekyll)
-1. database-password-containers
+1. database-password-containers - explicação sobre password no postgres
 
 

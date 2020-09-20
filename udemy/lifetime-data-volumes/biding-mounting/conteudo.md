@@ -1,12 +1,14 @@
 # nginx-server/Dockerfile
+
 cd nginx-server
-docker container run -d --name nginx -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
+docker container run -d --name nginx1 -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
 http://localhost:80
+http://localhost:80/index.html
 
 docker container run -d --name nginx2 -p 8080:80 nginx
 http://localhost:8080/
 
-docker container exec -it nginx bash
+docker container exec -it nginx1 bash
 cd usr/share/nginx/html/
 ls -la
 
