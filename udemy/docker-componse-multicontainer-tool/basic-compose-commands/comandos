@@ -2,8 +2,7 @@ cd compose-sample-2
 cat docker-compose.yml
 
 O arquivo "docker-compose.yml" tem dois containers, um
-com nginx (usado como proxy) e outro com httpd (acho que é um servidor http, acho
-que é o Apache Server)
+com nginx (usado como proxy) e outro com httpd (Apache HTTP Server)
 
 docker-compose up
 http://localhost:80

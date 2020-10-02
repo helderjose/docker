@@ -13,7 +13,7 @@ services:
       - drupal-sites:/var/www/html/sites
       - drupal-themes:/var/www/html/themes
 
-  postgres: # usa esse nome como host quando for configurar o drupal
+  postgres: # usar esse nome como host quando for configurar o drupal
     image: postgres:12.1
     environment:
       - POSTGRES_PASSWORD=mypasswd
