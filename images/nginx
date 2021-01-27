@@ -1,8 +1,0 @@
-https://hub.docker.com/_/nginx
-
-
-docker container ls -a
-docker container run -p 80:80 -d --name nginx-teste nginx
-
-
-http://localhost/ ou http://localhost:80

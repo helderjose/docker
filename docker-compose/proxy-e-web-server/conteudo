@@ -1,0 +1,14 @@
+
+Olhe os comentários do docker-compose.yml
+
+docker-compose up -d
+
+// vai ter só do apache http serve
+docker-compose logs
+
+http://localhost:80
+
+// vai ter do apache e do nginx
+docker-compose logs
+
+docker-compose down

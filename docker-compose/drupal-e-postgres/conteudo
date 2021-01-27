@@ -1,0 +1,16 @@
+docker-compose up -d
+
+// vai ter volumes por causa do jeito que está o docker-compose.yml
+docker volume ls
+
+http://localhost:8080/
+
+// Database configuration
+database type: PostgreSQL
+database name: postgres
+database username: postgres
+database password: mypasswd  // pegar no docker-compose.yml
+host: postgres  // pegar no docker-compose.yml
+
+docker-compose down -v  // pagar os volumes junto
+

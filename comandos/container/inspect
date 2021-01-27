@@ -10,3 +10,11 @@ docker container inspect nginx-teste
 --format
 A common option for formatting the output of commands using "Go templates".
 docker container inspect --format '{{ .NetworkSettings.IPAddress }}' nginx-teste  //exibe o ip do container
+
+
+
+
+
+dicas (palavras chave para pesquisa):
+Ver o ip do container:
+docker container inspect <container-name>

@@ -16,6 +16,7 @@ Usage:
 https://github.com/jenkinsci/docker/blob/master/README.md
 
 docker container run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+docker container run -p 8080:8080 -p 50000:50000 jenkins/jenkins:2.71  // versão específica
 http://localhost:8080
 
 
@@ -37,6 +38,7 @@ docker container stop <CONTAINER ID>
 
 
 docker container run -d --name jenkins-pleno-2 -p 8090:8080 -p 50000:50000 -v /opt/jenkins-docker/server-pleno-2/jenkins_home:/var/jenkins_home  jenkins/jenkins:lts
+docker container run -d --name jenkins-pleno-3 -p 8090:8080 -p 50000:50000 -v /opt/jenkins-docker/server-pleno-3/jenkins_home:/var/jenkins_home  jenkins/jenkins:2.71
 
 localhost:8090/safeRestart
 http://localhost:50000/
@@ -45,3 +47,12 @@ http://localhost:50000/
 
 plugins
 https://plugins.jenkins.io/git-parameter/
+
+
+
+Instalação Curso Udemy
+docker container run -d --name jenkins-pleno-3 -p 8090:8080 -p 50000:50000 -v /opt/jenkins-docker/server-pleno-3/jenkins_home:/var/jenkins_home  jenkins/jenkins:2.71
+http://localhost:8090
+docker container exec -it jenkins-pleno-3 bash
+cat /var/jenkins_home/secrets/initialAdminPassword
+cole o hash gerado.

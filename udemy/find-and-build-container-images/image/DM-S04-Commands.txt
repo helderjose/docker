@@ -4,6 +4,9 @@
 
 http://hub.docker.com
 
+
+Aqui estão todos os comandos da sessão (tem em cada pasta).
+
 docker image ls
 
 docker pull nginx

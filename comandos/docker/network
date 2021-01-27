@@ -15,7 +15,7 @@ Commands:
 
 # inspect
 docker network ls
-docker network inspect bridge
+docker network inspect bridge  // bridge é o nome de uma network listada no comando acima.
 
 # create
 docker network create --help

@@ -6,7 +6,7 @@ Procure pelo metadado "volumes"
 ------------------------------------------
 
 docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysql
-Acho que MYSQL_ALLOW_EMPTY_PASSWORD é uma variável de ambiente mysql.
+MYSQL_ALLOW_EMPTY_PASSWORD é uma variável de ambiente mysql.
 ----------------------------------------
 
 docker container ls

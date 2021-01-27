@@ -1,0 +1,24 @@
+
+docker-compose up -d
+http://localhost:80    // vai aparecer a página do template bootstrap
+docker-compose up -d --build  // Build images before starting containers.
+docker-compose down
+docker image ls // vai ter o nginx 1.13 que foi usado no nginx.Dockerfile
+docker-compose down --help
+
+docker-compose down --help
+docker-compose down --rmi local // 'local': Remove only images that don't have a custom tag set by the `image` field.
+
+
+----- Anotações -----
+
+docker-compose up --build
+Vai usar o arquivo nginx.Dockerfile, está declarado
+no atributo "build" do docker-compose.yml.
+
+
+docker-compose down --rmi local
+--rmi type              Remove images. Type must be one of:
+                          'all': Remove all images used by any service.
+                          'local': Remove only images that don't have a
+                          custom tag set by the `image` field.
