@@ -1,0 +1,20 @@
+https://hub.docker.com/_/node
+
+
+--rm remove o container ao finalizar
+
+docker container run -it --rm --name node1 node:14 node --version
+docker container run -it --rm --name node1 node:14       // fica com terminal do node aberto.
+docker container run -it --rm --name node1 node:14 pwd          // pwd no container
+docker container run -it --rm --name node1 node:14 ls -l        // lista as pastas do container
+
+
+
+Esses comandos devem ser executados na pasta onde está o arquivo .js
+
+docker container run -it --rm --name node1 -v $(pwd):/usr/src/app -w /usr/src/app node:14 node hello-node.js
+
+sem o -w
+docker container run -it --rm --name node1 -v $(pwd):/usr/src/app node:14 node /usr/src/app/hello-node.js
+
+
