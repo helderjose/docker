@@ -15,3 +15,12 @@
 
 
 para baixo preciso fazer
+
+
+pull
+pull baixa a imagem para o computador
+docker pull tutum/mongodb
+
+image
+lista as imagens que estão no computador
+docker images

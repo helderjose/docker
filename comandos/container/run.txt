@@ -49,6 +49,7 @@ echo $MY_VAR   // hello world
     if run with -it, it will give you a terminal inside the running container
 
   acessar o terminal do container
+  ao sair do terminal o container será parado
 */
 docker container run -it --name nginx-teste nginx bash
 

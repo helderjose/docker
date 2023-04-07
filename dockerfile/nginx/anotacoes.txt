@@ -1,0 +1,1 @@
+Funciona, mas não atualiza a página quando o arquivo é alterado.

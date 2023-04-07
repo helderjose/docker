@@ -1,0 +1,30 @@
+https://hub.docker.com/_/fedora
+
+
+Após configurado (apenas inciar um já existente)
+docker container start my-fedora
+docker container exec -it my-fedora bash
+---------------------------------------------------
+
+
+
+
+Primeiro start (configurações)
+
+docker pull fedora
+
+docker container run -it --name fedora2 fedora:35 bash
+
+- nvm
+  https://github.com/nvm-sh/nvm
+
+  comandos:
+    execute o curl de instalação (pegar no site);
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+    source ~/.bashrc
+    nvm --verion
+    nvm ls-remote
+    nvm install v18.12.1  (versao usanda só de exemplo)
+    nvm alias default v18.12.1
+
+-----------------------------------------------------------------

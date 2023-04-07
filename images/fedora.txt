@@ -1,0 +1,10 @@
+https://hub.docker.com/_/fedora
+
+
+docker pull fedora
+
+docker container run -it --name fedora2 fedora:35 bash
+
+
+// rodar o container depois de parado
+docker container start fedora2

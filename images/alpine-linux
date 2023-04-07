@@ -8,3 +8,7 @@ docker image ls
 docker container run -it alpine bash  //vai dar erro porque o alpine nao tem o bash.
 docker container run -it alpine sh
 apk   // Installing and removing packages.
+
+
+
+

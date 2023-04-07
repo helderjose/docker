@@ -1,0 +1,16 @@
+
+
+# iniciar o server
+docker container rm mongo-teste
+docker container run -p 27017:27017 --name mongo-teste mongo:4.0.4
+docker container stop mongo-teste
+
+# acompanhar o que está acontecendo no server, caso tenha usado -d na hora de run.
+docker logs mongo-teste --follow
+
+# conectar no server e executar comandos
+docker container exec -it mongo-teste sh
+mongo
+db.version()
+help
+show dbs

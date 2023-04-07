@@ -1,0 +1,42 @@
+Estou tentando configurar um ambiente
+
+ainda não consegui, dá erro quando tenta executar o node.
+
+- nvm
+- node
+- npm
+
+
+docker container run -it alpine sh
+
+
+python
+apk add --no-cache python3 py3-pip
+
+- bash
+  https://www.cyberciti.biz/faq/alpine-linux-install-bash-using-apk-command/
+
+  comandos:
+    apk update
+    apk updade
+    apk add bash
+    bash    usa o bash como terminal
+    bash --verison
+
+  Crie o arquivo .bashrc na home, use o vi.
+
+
+- curl
+  https://www.cyberciti.biz/faq/how-to-install-curl-on-alpine-linux/
+
+  comandos:
+  apk --no-cache add curl
+  curl --version
+
+- nvm
+  https://github.com/nvm-sh/nvm
+
+  comandos:
+    execute o curl de intalção (pegar no site);
+    source ~/.bashrc
+    nvm --verion

@@ -1,0 +1,14 @@
+docker container run -it -p 8080:8080 -v $(pwd):/home/diagnostic-new --name diagnostic fedora:35 bash
+
+- instale o nvm
+- node
+  nvm install v10.24.1
+  nvm alias default v10.24.1
+- vue
+  npm install -g @vue/cli@4.4.5 @vue/cli-service-global
+
+
+# docostart --it alpine1 sh
+
+
+docker container exec -it diagnostic bash

@@ -1,0 +1,10 @@
+docker container run -it --name fedora3 fedora:35 bash
+
+# instalando o nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+source ~/.bashrc
+nvm install v10.24.1
+nvm alias default v10.24.1
+
+# instalando o vue
+npm install -g @vue/cli@4.4.5 @vue/cli-service-global

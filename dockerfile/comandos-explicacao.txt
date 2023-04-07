@@ -1,0 +1,6 @@
+
+  -t   (tag), nome da imagem que será criada
+  . representa a pasta atual
+docker build -t image-test .
+
+docker container run image-test
